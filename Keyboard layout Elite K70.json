@@ -91,7 +91,7 @@
     },
     {
       "xKeyName": "BKSP",
-      "size": 3.14
+      "width": 3.14
     },
     {
       "xKeyName": "INS"
@@ -100,7 +100,7 @@
   [
     {
       "xKeyName": "TAB",
-      "size": 2.1
+      "width": 2.1
     },
     {
       "xKeyName": "AD01"
@@ -140,7 +140,7 @@
     },
     {
       "xKeyName": "RTRN",
-      "size": 2.29
+      "width": 2.29
     },
     {
       "xKeyName": "END"
@@ -149,7 +149,7 @@
   [
     {
       "xKeyName": "CAPS",
-      "size": 2.7
+      "width": 2.7
     },
     {
       "xKeyName": "AC01"
@@ -189,7 +189,7 @@
     },
     {
       "xKeyName": "RTRN",
-      "size": 1.69
+      "width": 1.69
     },
     {
       "xKeyName": "PGUP"
@@ -231,11 +231,11 @@
     },
     {
       "xKeyName": "AB10",
-      "size": 1.67
+      "width": 1.67
     },
     {
       "xKeyName": "RTSH",
-      "size": 2.72
+      "width": 2.72
     },
     {
       "xKeyName": "UP"
@@ -247,30 +247,30 @@
   [
     {
       "xKeyName": "LCTL",
-      "size": 1.67
+      "width": 1.67
     },
     {
       "xKeyName": "LWIN",
-      "size": 1.66
+      "width": 1.66
     },
     {
       "xKeyName": "LALT",
-      "size": 1.67
+      "width": 1.67
     },
     {
       "xKeyName": "SPCE",
-      "size": 10.28
+      "width": 10.28
     },
     {
       "xKeyName": "RALT",
-      "size": 1.67
+      "width": 1.67
     },
     {
-      "size": 1.67
+      "width": 1.67
     },
     {
       "xKeyName": "RCTL",
-      "size": 1.47
+      "width": 1.47
     },
     {
       "xKeyName": "LEFT"
