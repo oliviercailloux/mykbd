@@ -18,15 +18,38 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class App {
+  @SuppressWarnings("unused")
+  private static final Logger LOGGER = LoggerFactory.getLogger(App.class);
+
   public static void main(String[] args) throws Exception {
+    new App().proceed();
+  }
+
+  private DomHelper domHelper;
+
+  App() {
+    domHelper = DomHelper.domHelper();
+  }
+
+  public void proceed() throws Exception {
+    LOGGER.info("Hello World!");
     CharSource source = Resources.asCharSource(
         Path.of("Keyboard layout Elite K70.json").toUri().toURL(), StandardCharsets.UTF_8);
+
     JsonRectangularRowKeyboard layout = JsonRectangularKeyboardReader.rowKeyboard(source);
 
+    double spacingWidth = 0.207d;
+    double defaultWidth = 8d*spacingWidth;
+    /* spacing width varies. Average is 29.6 cm for total length for 16 standard keys and 15 sep. */
+    verify(DoubleMath.fuzzyEquals(29.601d, 16*defaultWidth+15*spacingWidth, 1e-4d));
+    double defaultHeight = 1.6d;
+    /* Total height is 11 cm (measured), that is 6*height + 5*spacingHeight. */
+    double spacingHeight = 0.28d;
+    verify(DoubleMath.fuzzyEquals(11d, 6*defaultHeight+5*spacingHeight, 1e-4d));
     RectangularKeyboard physicalKeyboard = layout.toPhysicalKeyboard(
         PositiveSize.given(defaultWidth, defaultHeight), PositiveSize.given(spacingWidth, spacingHeight));
     SvgKeyboard svgK = SvgKeyboard.zonedFrom(physicalKeyboard);
-    String svg = DomHelper.domHelper().toString(svgK.document());
+    String svg = domHelper.toString(svgK.document());
     Files.writeString(Path.of("Rectangular Elite K70.svg"), svg);
   }
 }
