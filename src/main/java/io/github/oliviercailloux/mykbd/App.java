@@ -27,6 +27,6 @@ public class App {
         PositiveSize.given(1.656d, 1.6d), PositiveSize.given(0.207d, 0.28d));
     SvgKeyboard svgK = SvgKeyboard.zonedFrom(physicalKeyboard);
     String svg = DomHelper.domHelper().toString(svgK.document());
-    Files.writeString(Path.of("Rectangular Elite K70.svg"), svg);
+    Files.writeString(Path.of("Rectangular Elite K70 unlabeled.svg"), svg);
   }
 }
