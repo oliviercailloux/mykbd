@@ -1,0 +1,8 @@
+
+== Mine
+    /*
+     * Also, key F1 sends keycode 67, F2 sends keycode 68, Fn+F1 sends keycode 179, sym XF86Tools
+     * (269025153), Fn+F2 sends keycode 122, sym XF86AudioLowerVolume (269025041). evdev maps
+     * keycode 179 to I179 and keycode 122 to VOL-.
+     * 
+     */
