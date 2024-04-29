@@ -55,7 +55,7 @@ xkb_symbols "oss" {
     key <AB04>  { [ v, V, ⍽, ← ] };
     key <AB05>  { [ b, B, ↓, ↑ ] };
     key <AB06>  { [ n, N, ¬, → ] };
-    key <AB07>  { [ ,, ?, ¿, … ] };
+    key <AB07>  { [ comma, ?, ¿, … ] };
     key <AB08>  { [ ;, ., ×, ⋅ ] };
     key <AB09>  { [ :, /, ÷, ∕ ] };
     key <AB10>  { [ !, §, ¡, − ] };
