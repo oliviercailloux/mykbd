@@ -60,5 +60,5 @@ xkb_symbols "oss" {
     key <AB09>  { [ :, /, ÷, ∕ ] };
     key <AB10>  { [ !, §, ¡, − ] };
 
-    key <SPCE> { [ space, space, space, nobreakspace, space, 0x100202F, NoSymbol, NoSymbol ] };
+    key <SPCE> { [ space, space, space, nobreakspace, space, 0x100202F ] };
 };
