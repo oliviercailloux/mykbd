@@ -30,6 +30,7 @@ public class App {
     KeyboardMap map = SimpleSymbolsReader.read(source);
     VisibleKeyboardMap visible = VisibleKeyboardMap.from(map, ImmutableMap.of());
     SvgKeyboard svgK = SvgKeyboard.using(DOM_HELPER.asDocument(new StreamSource(new StringReader(Files.readString(Path.of("Elite K70 unlabeled.svg"))))));
+    svgK.setFontSize(16d);
     Document withRepresentations = svgK.withRepresentations(visible::representations);
     Files.writeString(Path.of("Elite K70 French.svg"), DOM_HELPER.toString(withRepresentations));
   }
