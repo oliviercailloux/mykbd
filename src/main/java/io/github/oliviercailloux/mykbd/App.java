@@ -13,7 +13,6 @@ import io.github.oliviercailloux.keyboardd.representable.SvgKeyboard;
 import io.github.oliviercailloux.keyboardd.representable.VisibleKeyboardMap;
 import io.github.oliviercailloux.svgb.PositiveSize;
 import java.io.IOException;
-import java.io.StringReader;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -29,7 +28,7 @@ public class App {
         Path.of("fr"), StandardCharsets.UTF_8);
     KeyboardMap map = SimpleSymbolsReader.read(source);
     VisibleKeyboardMap visible = VisibleKeyboardMap.from(map, ImmutableMap.of());
-    SvgKeyboard svgK = SvgKeyboard.using(DOM_HELPER.asDocument(new StreamSource(new StringReader(Files.readString(Path.of("Elite K70 unlabeled.svg"))))));
+    SvgKeyboard svgK = SvgKeyboard.using(DOM_HELPER.asDocument(new StreamSource(Path.of("Elite K70 unlabeled.svg").toUri().toString())));
     svgK.setFontSize(16d);
     Document withRepresentations = svgK.withRepresentations(visible::representations);
     Files.writeString(Path.of("Elite K70 French.svg"), DOM_HELPER.toString(withRepresentations));
