@@ -32,7 +32,8 @@ public class App {
   private static void french() throws IOException {
     CharSource source = MoreFiles.asCharSource(Path.of("fr"), StandardCharsets.UTF_8);
     KeyboardMap map = SimpleSymbolsReader.read(source);
-    final ImmutableMap.Builder<KeysymEntry, Representation> reprsBuilder = new ImmutableMap.Builder<>();
+    final ImmutableMap.Builder<KeysymEntry, Representation> reprsBuilder =
+        new ImmutableMap.Builder<>();
     reprsBuilder.put(KeysymEntry.mnemonic("comma"), Representation.fromString(","));
     reprsBuilder.put(KeysymEntry.mnemonic("—"), Representation.fromString("— (em dash)"));
     ImmutableMap<KeysymEntry, Representation> reprs = reprsBuilder.build();
