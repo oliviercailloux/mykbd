@@ -8,7 +8,9 @@ import io.github.oliviercailloux.keyboardd.keyboard.RectangularKeyboard;
 import io.github.oliviercailloux.keyboardd.keyboard.json.JsonRectangularKeyboardReader;
 import io.github.oliviercailloux.keyboardd.keyboard.json.JsonRectangularRowKeyboard;
 import io.github.oliviercailloux.keyboardd.mapping.KeyboardMap;
+import io.github.oliviercailloux.keyboardd.mapping.KeysymEntry;
 import io.github.oliviercailloux.keyboardd.mapping.SimpleSymbolsReader;
+import io.github.oliviercailloux.keyboardd.representable.Representation;
 import io.github.oliviercailloux.keyboardd.representable.SvgKeyboard;
 import io.github.oliviercailloux.keyboardd.representable.VisibleKeyboardMap;
 import io.github.oliviercailloux.svgb.PositiveSize;
@@ -24,25 +26,33 @@ public class App {
 
   public static void main(String[] args) throws Exception {
     rectangular();
-    CharSource source = MoreFiles.asCharSource(
-        Path.of("fr"), StandardCharsets.UTF_8);
+    french();
+  }
+
+  private static void french() throws IOException {
+    CharSource source = MoreFiles.asCharSource(Path.of("fr"), StandardCharsets.UTF_8);
     KeyboardMap map = SimpleSymbolsReader.read(source);
-    VisibleKeyboardMap visible = VisibleKeyboardMap.from(map, ImmutableMap.of());
-    SvgKeyboard svgK = SvgKeyboard.using(DOM_HELPER.asDocument(new StreamSource(Path.of("Elite K70 unlabeled.svg").toUri().toString())));
+    final ImmutableMap.Builder<KeysymEntry, Representation> reprsBuilder = new ImmutableMap.Builder<>();
+    reprsBuilder.put(KeysymEntry.mnemonic("comma"), Representation.fromString(","));
+    reprsBuilder.put(KeysymEntry.mnemonic("—"), Representation.fromString("— (em dash)"));
+    ImmutableMap<KeysymEntry, Representation> reprs = reprsBuilder.build();
+    VisibleKeyboardMap visible = VisibleKeyboardMap.from(map, reprs);
+    SvgKeyboard svgK = SvgKeyboard.using(DOM_HELPER
+        .asDocument(new StreamSource(Path.of("Elite K70 unlabeled.svg").toUri().toString())));
     svgK.setFontSize(16d);
     Document withRepresentations = svgK.withRepresentations(visible::representations);
     Files.writeString(Path.of("Elite K70 French.svg"), DOM_HELPER.toString(withRepresentations));
   }
 
   public static void rectangular() throws IOException {
-    CharSource source = MoreFiles.asCharSource(
-        Path.of("Keyboard layout Elite K70.json"), StandardCharsets.UTF_8);
+    CharSource source =
+        MoreFiles.asCharSource(Path.of("Keyboard layout Elite K70.json"), StandardCharsets.UTF_8);
     JsonRectangularRowKeyboard layout = JsonRectangularKeyboardReader.rowKeyboard(source);
 
-    RectangularKeyboard physicalKeyboard = layout.toPhysicalKeyboard(
-        PositiveSize.given(1.656d, 1.6d), PositiveSize.given(0.207d, 0.28d));
+    RectangularKeyboard physicalKeyboard = layout
+        .toPhysicalKeyboard(PositiveSize.given(1.656d, 1.6d), PositiveSize.given(0.207d, 0.28d));
     SvgKeyboard svgK = SvgKeyboard.zonedFrom(physicalKeyboard);
-    String svg = DOM_HELPER.toString(svgK.document());
-    Files.writeString(Path.of("Rectangular Elite K70 unlabeled.svg"), svg);
+    Files.writeString(Path.of("Rectangular Elite K70 unlabeled.svg"),
+        DOM_HELPER.toString(svgK.document()));
   }
 }
