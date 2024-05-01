@@ -48,7 +48,7 @@ public class App {
     final ImmutableMap.Builder<KeysymEntry, Representation> reprsBuilder =
         new ImmutableMap.Builder<>();
     reprsBuilder.put(KeysymEntry.mnemonic("comma"), Representation.fromString(","));
-    ImmutableMap<KeysymEntry, Representation> reprs = reprsBuilder.build();
+    ImmutableMap<KeysymEntry, Representation> reprs = Mapping.representations();
     VisibleKeyboardMap visible = VisibleKeyboardMap.from(map, reprs);
     SvgKeyboard svgK = SvgKeyboard.using(DOM_HELPER
         .asDocument(new StreamSource(Path.of("Elite K70 unlabeled.svg").toUri().toString())));
