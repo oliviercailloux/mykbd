@@ -32,8 +32,8 @@ xkb_symbols "pc-fr-oss" {
     key <RGHT> {	[  Right		]	};
 
     key <BKSP> {	[ BackSpace, BackSpace	]	};
-    key  <TAB> {	[ ↹,	ISO_Left_Tab	]	};
-    key <RTRN> {	[ ↵		]	};
+    key  <TAB> {	[ ↹,	␉	]	};
+    key <RTRN> {	[ ⏎		]	};
     key <CAPS> {	[ Caps_Lock		]	};
     key <NMLK> {	[ Num_Lock 		]	};
     key <LFSH> {	[ Shift_L		]	};
@@ -111,5 +111,5 @@ xkb_symbols "pc-fr-oss" {
     key <AB09>  { [ :, /, ÷, ∕ ] };
     key <AB10>  { [ !, §, ¡, − ] };
 
-    key <SPCE> { [ space, space, space, nobreakspace, space, 0x100202F ] };
+    key <SPCE> { [ ␣, ␣, ␣, ⍽, ␣, ⍽ ] };
 };
