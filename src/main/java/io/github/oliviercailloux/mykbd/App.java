@@ -42,12 +42,11 @@ public class App {
   }
 
   private static void french() throws IOException {
-    CharSource source = MoreFiles.asCharSource(Path.of("fr"), StandardCharsets.UTF_8);
+    CharSource source = MoreFiles.asCharSource(Path.of("pc-fr"), StandardCharsets.UTF_8);
     KeyboardMap map = SimpleSymbolsReader.read(source);
     final ImmutableMap.Builder<KeysymEntry, Representation> reprsBuilder =
         new ImmutableMap.Builder<>();
     reprsBuilder.put(KeysymEntry.mnemonic("comma"), Representation.fromString(","));
-    reprsBuilder.put(KeysymEntry.mnemonic("—"), Representation.fromString("— (em dash)"));
     ImmutableMap<KeysymEntry, Representation> reprs = reprsBuilder.build();
     VisibleKeyboardMap visible = VisibleKeyboardMap.from(map, reprs);
     SvgKeyboard svgK = SvgKeyboard.using(DOM_HELPER
