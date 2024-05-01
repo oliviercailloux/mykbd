@@ -32,8 +32,8 @@ xkb_symbols "pc-fr-oss" {
     key <RGHT> {	[  Right		]	};
 
     key <BKSP> {	[ BackSpace, BackSpace	]	};
-    key  <TAB> {	[ Tab,	ISO_Left_Tab	]	};
-    key <RTRN> {	[ Return		]	};
+    key  <TAB> {	[ ↹,	ISO_Left_Tab	]	};
+    key <RTRN> {	[ ↵		]	};
     key <CAPS> {	[ Caps_Lock		]	};
     key <NMLK> {	[ Num_Lock 		]	};
     key <LFSH> {	[ Shift_L		]	};
