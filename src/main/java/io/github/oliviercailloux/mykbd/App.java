@@ -29,6 +29,18 @@ public class App {
     french();
   }
 
+  public static void rectangular() throws IOException {
+    CharSource source =
+        MoreFiles.asCharSource(Path.of("Keyboard layout Elite K70.json"), StandardCharsets.UTF_8);
+    JsonRectangularRowKeyboard layout = JsonRectangularKeyboardReader.rowKeyboard(source);
+
+    RectangularKeyboard physicalKeyboard = layout
+        .toPhysicalKeyboard(PositiveSize.given(1.656d, 1.6d), PositiveSize.given(0.207d, 0.28d));
+    SvgKeyboard svgK = SvgKeyboard.zonedFrom(physicalKeyboard);
+    Files.writeString(Path.of("Rectangular Elite K70 unlabeled.svg"),
+        DOM_HELPER.toString(svgK.document()));
+  }
+
   private static void french() throws IOException {
     CharSource source = MoreFiles.asCharSource(Path.of("fr"), StandardCharsets.UTF_8);
     KeyboardMap map = SimpleSymbolsReader.read(source);
@@ -43,17 +55,5 @@ public class App {
     svgK.setFontSize(16d);
     Document withRepresentations = svgK.withRepresentations(visible::representations);
     Files.writeString(Path.of("Elite K70 French.svg"), DOM_HELPER.toString(withRepresentations));
-  }
-
-  public static void rectangular() throws IOException {
-    CharSource source =
-        MoreFiles.asCharSource(Path.of("Keyboard layout Elite K70.json"), StandardCharsets.UTF_8);
-    JsonRectangularRowKeyboard layout = JsonRectangularKeyboardReader.rowKeyboard(source);
-
-    RectangularKeyboard physicalKeyboard = layout
-        .toPhysicalKeyboard(PositiveSize.given(1.656d, 1.6d), PositiveSize.given(0.207d, 0.28d));
-    SvgKeyboard svgK = SvgKeyboard.zonedFrom(physicalKeyboard);
-    Files.writeString(Path.of("Rectangular Elite K70 unlabeled.svg"),
-        DOM_HELPER.toString(svgK.document()));
   }
 }
