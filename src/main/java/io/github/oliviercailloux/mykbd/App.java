@@ -42,6 +42,7 @@ public class App {
   }
 
   private static void french() throws IOException {
+    // Thanks to https://en.wikipedia.org/wiki/Whitespace_character
     CharSource source = MoreFiles.asCharSource(Path.of("pc-fr"), StandardCharsets.UTF_8);
     KeyboardMap map = SimpleSymbolsReader.read(source);
     final ImmutableMap.Builder<KeysymEntry, Representation> reprsBuilder =
