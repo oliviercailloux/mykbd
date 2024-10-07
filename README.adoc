@@ -8,3 +8,19 @@
      */
 
 https://packages.debian.org/bookworm/all/xkb-data/filelist
+
+
+== Instructions
+
+- Created Elite K70.json manually
+- Rectangular.java yields Rectangular Elite K70 unlabeled.svg.
+- Manual modification yields Elite K70 unlabeled.svg.
+
+X key names styled
+
+- XKeyNamed.java yields Elite K70 with X key names.svg.
+- Manual modification yields Elite K70 with X key names styled.svg.
+
+French mapping styled
+- French.java yields Elite K70 French.svg.
+- Manual modification yields Elite K70 French styled.svg.

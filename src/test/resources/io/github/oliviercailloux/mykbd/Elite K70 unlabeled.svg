@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" height="415.74803149606305" width="1118.7779527559053" xmlns:kdd="https://io.github.oliviercailloux.keyboardd">
+  <style type="text/css"><![CDATA[
+    .fn {
+    text-anchor: middle;
+    dominant-baseline: middle;
+    font-size: 25.0px;
+    }
+]]>
+</style>
     <style>rect {
       fill-opacity: 0;
       stroke: black;
@@ -89,7 +97,9 @@ stroke-width: 1px;
     <rect height="60.47244094488189" rx="10.0" width="80.19212598425196" x="176.0314960629921" kdd:x-key-name="LALT" y="355.27559055118115"/>
     <rect height="60.47244094488189" rx="10.0" width="397.0488188976378" x="264.0472440944882" kdd:x-key-name="SPCE" y="355.27559055118115"/>
     <rect height="60.47244094488189" rx="10.0" width="80.19212598425196" x="668.9196850393702" kdd:x-key-name="RALT" y="355.27559055118115"/>
-    <rect height="60.47244094488189" rx="10.0" width="80.19212598425196" x="756.9354330708661" kdd:x-key-name="" y="355.27559055118115"/>
+    <rect height="60.47244094488189" rx="10.0" width="80.19212598425196" x="756.9354330708661" y="355.27559055118115"></rect><g transform="translate(756.9354330708661, 355.27559055118115)">
+      <text x="40.1" y="30.236220472440944" class="fn">Fn</text>
+  </g>
     <rect height="60.47244094488189" rx="10.0" width="62.58897637795275" x="844.9511811023622" kdd:x-key-name="RCTL" y="355.27559055118115"/>
     <rect height="60.47244094488189" rx="10.0" width="62.58897637795275" x="915.363779527559" kdd:x-key-name="LEFT" y="355.27559055118115"/>
     <rect height="60.47244094488189" rx="10.0" width="62.58897637795275" x="985.7763779527559" kdd:x-key-name="DOWN" y="355.27559055118115"/>
