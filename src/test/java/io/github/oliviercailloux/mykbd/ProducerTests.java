@@ -30,13 +30,14 @@ public class ProducerTests {
     JsonRectangularRowKeyboard layout = JsonRectangularKeyboardReader
         .rowKeyboard(jsonFactory.asByteSource().asCharSource(StandardCharsets.UTF_8));
 
-    RectangularKeyboard physicalKeyboard = layout
-        .toPhysicalKeyboard(Point.given(1.656d, 1.6d), Point.given(0.207d, 0.28d));
+    RectangularKeyboard physicalKeyboard =
+        layout.toPhysicalKeyboard(Point.given(1.656d, 1.6d), Point.given(0.207d, 0.28d));
     SvgKeyboard svgK = SvgKeyboard.zonedFrom(physicalKeyboard);
-    CloseablePathFactory f = PathUtils.fromResource(ProducerTests.class, "Rectangular Elite K70 unlabeled.svg");
+    CloseablePathFactory f =
+        PathUtils.fromResource(ProducerTests.class, "Rectangular Elite K70 unlabeled.svg");
     String expected = PathUtils.read(f);
-  String result = DOM_HELPER.toString(svgK.document());
-  // Files.writeString(Path.of("Rectangular Elite K70 unlabeled.svg"), result);
-  assertEquals(expected, result);
+    String result = DOM_HELPER.toString(svgK.document());
+    // Files.writeString(Path.of("Rectangular Elite K70 unlabeled.svg"), result);
+    assertEquals(expected, result);
   }
 }
