@@ -17,21 +17,21 @@ stroke: black;
 stroke-width: 1px;
 }</style>
     <rect height="60.4724" rx="10" width="62.589" kdd:x-key-name="ESC"/>
-    <rect height="60.4724" rx="10" width="62.589" x="70.41259842519685" kdd:x-key-name="FK01" y="0"/>
-    <rect height="60.4724" rx="10" width="62.589" x="140.8251968503937" kdd:x-key-name="FK02" y="0"/>
-    <rect height="60.4724" rx="10" width="62.589" x="211.23779527559054" kdd:x-key-name="FK03" y="0"/>
-    <rect height="60.4724" rx="10" width="62.589" x="281.6503937007874" kdd:x-key-name="FK04" y="0"/>
-    <rect height="60.4724" rx="10" width="62.589" x="352.0629921259842" kdd:x-key-name="FK05" y="0"/>
-    <rect height="60.4724" rx="10" width="62.589" x="422.475590551181" kdd:x-key-name="FK06" y="0"/>
-    <rect height="60.4724" rx="10" width="62.589" x="492.8881889763779" kdd:x-key-name="FK07" y="0"/>
-    <rect height="60.4724" rx="10" width="62.589" x="563.3007874015747" kdd:x-key-name="FK08" y="0"/>
-    <rect height="60.4724" rx="10" width="62.589" x="633.7133858267716" kdd:x-key-name="FK09" y="0"/>
-    <rect height="60.4724" rx="10" width="62.589" x="704.1259842519684" kdd:x-key-name="FK10" y="0"/>
-    <rect height="60.4724" rx="10" width="62.589" x="774.5385826771652" kdd:x-key-name="FK11" y="0"/>
-    <rect height="60.4724" rx="10" width="62.589" x="844.951181102362" kdd:x-key-name="FK12" y="0"/>
-    <rect height="60.4724" rx="10" width="62.589" x="915.3637795275589" kdd:x-key-name="PRSC" y="0"/>
-    <rect height="60.4724" rx="10" width="62.589" x="985.7763779527558" kdd:x-key-name="PAUS" y="0"/>
-    <rect height="60.4724" rx="10" width="62.589" x="1056.1889763779525" kdd:x-key-name="DELE" y="0"/>
+    <rect height="60.4724" rx="10" width="62.589" x="70.4126" kdd:x-key-name="FK01" y="0"/>
+    <rect height="60.4724" rx="10" width="62.589" x="140.8252" kdd:x-key-name="FK02" y="0"/>
+    <rect height="60.4724" rx="10" width="62.589" x="211.2378" kdd:x-key-name="FK03" y="0"/>
+    <rect height="60.4724" rx="10" width="62.589" x="281.6504" kdd:x-key-name="FK04" y="0"/>
+    <rect height="60.4724" rx="10" width="62.589" x="352.063" kdd:x-key-name="FK05" y="0"/>
+    <rect height="60.4724" rx="10" width="62.589" x="422.4756" kdd:x-key-name="FK06" y="0"/>
+    <rect height="60.4724" rx="10" width="62.589" x="492.8882" kdd:x-key-name="FK07" y="0"/>
+    <rect height="60.4724" rx="10" width="62.589" x="563.3008" kdd:x-key-name="FK08" y="0"/>
+    <rect height="60.4724" rx="10" width="62.589" x="633.7134" kdd:x-key-name="FK09" y="0"/>
+    <rect height="60.4724" rx="10" width="62.589" x="704.126" kdd:x-key-name="FK10" y="0"/>
+    <rect height="60.4724" rx="10" width="62.589" x="774.5386" kdd:x-key-name="FK11" y="0"/>
+    <rect height="60.4724" rx="10" width="62.589" x="844.9512" kdd:x-key-name="FK12" y="0"/>
+    <rect height="60.4724" rx="10" width="62.589" x="915.3638" kdd:x-key-name="PRSC" y="0"/>
+    <rect height="60.4724" rx="10" width="62.589" x="985.7764" kdd:x-key-name="PAUS" y="0"/>
+    <rect height="60.4724" rx="10" width="62.589" x="1056.189" kdd:x-key-name="DELE" y="0"/>
     <rect height="60.4724" rx="10" width="62.589" x="0" kdd:x-key-name="TLDE" y="71.0551"/>
     <rect height="60.4724" rx="10" width="62.589" x="70.41259842519685" kdd:x-key-name="AE01" y="71.0551"/>
     <rect height="60.4724" rx="10" width="62.589" x="140.8251968503937" kdd:x-key-name="AE02" y="71.0551"/>
