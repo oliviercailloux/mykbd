@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" height="415.74803149606305" width="1118.7779527559053" xmlns:kdd="https://io.github.oliviercailloux.keyboardd">
-  <style type="text/css"><![CDATA[
-    .fn {
+  <style>.fn {
     text-anchor: middle;
     dominant-baseline: middle;
     font-size: 25.0px;
     }
-]]>
 </style>
     <style>rect {
       fill-opacity: 0;
