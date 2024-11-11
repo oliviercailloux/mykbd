@@ -21,6 +21,7 @@ import io.github.oliviercailloux.keyboardd.mnemonics.CanonicalKeysymEntry;
 import io.github.oliviercailloux.keyboardd.mnemonics.CanonicalMnemonic;
 import io.github.oliviercailloux.keyboardd.mnemonics.ImplicitUcp;
 import io.github.oliviercailloux.keyboardd.mnemonics.Mnemonics;
+import io.github.oliviercailloux.keyboardd.representable.CanonicalKeyboardMapRepresenter;
 import io.github.oliviercailloux.keyboardd.representable.RectangularKeyboard;
 import io.github.oliviercailloux.keyboardd.representable.Representation;
 import io.github.oliviercailloux.keyboardd.representable.SvgKeyboard;
@@ -80,7 +81,7 @@ public class ProducerTests {
     CanonicalKeyboardMap canonMap = CanonicalKeyboardMap
         .canonicalize(map.canonicalize(Xkeys.latest().canonicalByAlias()), Mnemonics.latest());
     XKeyNamesAndRepresenter representer =
-        XKeyNamesAndRepresenter.from(canonMap, XKeyNamesAndRepresenter::defaultRepresentation);
+        CanonicalKeyboardMapRepresenter.from(canonMap, XKeyNamesAndRepresenter::defaultRepresentation);
     Document out = inputSvg.withRepresentations(representer::representations);
 
     String result = DOM_HELPER.toString(out);

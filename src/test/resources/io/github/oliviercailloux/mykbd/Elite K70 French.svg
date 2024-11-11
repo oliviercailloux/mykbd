@@ -207,31 +207,31 @@ stroke-width: 1px;
     </g>
     <rect height="60.4724" kdd:x-key-name="AD03" rx="10" width="62.589" x="246.4441" y="142.1102"/>
     <g transform="translate(246.4441, 142.1102)">
-        <text x="15.6472" y="45.3543">e</text>
-        <text x="15.6472" y="15.1181">E</text>
-        <text x="46.9417" y="45.3543">€</text>
-        <text x="46.9417" y="15.1181">¢</text>
+        <text x="15.6473" y="45.3543">e</text>
+        <text x="15.6473" y="15.1181">E</text>
+        <text x="46.9418" y="45.3543">€</text>
+        <text x="46.9418" y="15.1181">¢</text>
     </g>
     <rect height="60.4724" kdd:x-key-name="AD04" rx="10" width="62.589" x="316.8567" y="142.1102"/>
     <g transform="translate(316.8567, 142.1102)">
-        <text x="15.6472" y="45.3543">r</text>
-        <text x="15.6472" y="15.1181">R</text>
-        <text x="46.9417" y="45.3543">ê</text>
-        <text x="46.9417" y="15.1181">Ê</text>
+        <text x="15.6473" y="45.3543">r</text>
+        <text x="15.6473" y="15.1181">R</text>
+        <text x="46.9418" y="45.3543">ê</text>
+        <text x="46.9418" y="15.1181">Ê</text>
     </g>
     <rect height="60.4724" kdd:x-key-name="AD05" rx="10" width="62.589" x="387.2693" y="142.1102"/>
     <g transform="translate(387.2693, 142.1102)">
-        <text x="15.6472" y="45.3543">t</text>
-        <text x="15.6472" y="15.1181">T</text>
-        <text x="46.9417" y="45.3543">þ</text>
-        <text x="46.9417" y="15.1181">Þ</text>
+        <text x="15.6473" y="45.3543">t</text>
+        <text x="15.6473" y="15.1181">T</text>
+        <text x="46.9418" y="45.3543">þ</text>
+        <text x="46.9418" y="15.1181">Þ</text>
     </g>
     <rect height="60.4724" kdd:x-key-name="AD06" rx="10" width="62.589" x="457.6819" y="142.1102"/>
     <g transform="translate(457.6819, 142.1102)">
-        <text x="15.6472" y="45.3543">y</text>
-        <text x="15.6472" y="15.1181">Y</text>
-        <text x="46.9417" y="45.3543">ÿ</text>
-        <text x="46.9417" y="15.1181">Ÿ</text>
+        <text x="15.6473" y="45.3543">y</text>
+        <text x="15.6473" y="15.1181">Y</text>
+        <text x="46.9418" y="45.3543">ÿ</text>
+        <text x="46.9418" y="15.1181">Ÿ</text>
     </g>
     <rect height="60.4724" kdd:x-key-name="AD07" rx="10" width="62.589" x="528.0945" y="142.1102"/>
     <g transform="translate(528.0945, 142.1102)">
@@ -297,8 +297,8 @@ stroke-width: 1px;
     </g>
     <rect height="60.4724" kdd:x-key-name="AC02" rx="10" width="62.589" x="193.6346" y="213.1654"/>
     <g transform="translate(193.6346, 213.1654)">
-        <text x="15.6473" y="45.3543">s</text>
-        <text x="15.6473" y="15.1181">S</text>
+        <text x="15.6472" y="45.3543">s</text>
+        <text x="15.6472" y="15.1181">S</text>
         <text x="46.9418" y="45.3543">ß</text>
         <text x="46.9418" y="15.1181">„</text>
     </g>
@@ -311,24 +311,24 @@ stroke-width: 1px;
     </g>
     <rect height="60.4724" kdd:x-key-name="AC04" rx="10" width="62.589" x="334.4595" y="213.1654"/>
     <g transform="translate(334.4595, 213.1654)">
-        <text x="15.6472" y="45.3543">f</text>
-        <text x="15.6472" y="15.1181">F</text>
-        <text x="46.9417" y="45.3543">‘</text>
-        <text x="46.9417" y="15.1181">‚</text>
+        <text x="15.6473" y="45.3543">f</text>
+        <text x="15.6473" y="15.1181">F</text>
+        <text x="46.9418" y="45.3543">‘</text>
+        <text x="46.9418" y="15.1181">‚</text>
     </g>
     <rect height="60.4724" kdd:x-key-name="AC05" rx="10" width="62.589" x="404.8724" y="213.1654"/>
     <g transform="translate(404.8724, 213.1654)">
-        <text x="15.6472" y="45.3543">g</text>
-        <text x="15.6472" y="15.1181">G</text>
-        <text x="46.9417" y="45.3543">’</text>
-        <text x="46.9417" y="15.1181">¥</text>
+        <text x="15.6473" y="45.3543">g</text>
+        <text x="15.6473" y="15.1181">G</text>
+        <text x="46.9418" y="45.3543">’</text>
+        <text x="46.9418" y="15.1181">¥</text>
     </g>
     <rect height="60.4724" kdd:x-key-name="AC06" rx="10" width="62.589" x="475.2850" y="213.1654"/>
     <g transform="translate(475.285, 213.1654)">
-        <text x="15.6472" y="45.3543">h</text>
-        <text x="15.6472" y="15.1181">H</text>
-        <text x="46.9417" y="45.3543">ð</text>
-        <text x="46.9417" y="15.1181">Ð</text>
+        <text x="15.6473" y="45.3543">h</text>
+        <text x="15.6473" y="15.1181">H</text>
+        <text x="46.9418" y="45.3543">ð</text>
+        <text x="46.9418" y="15.1181">Ð</text>
     </g>
     <rect height="60.4724" kdd:x-key-name="AC07" rx="10" width="62.589" x="545.6976" y="213.1654"/>
     <g transform="translate(545.6976, 213.1654)">
@@ -412,7 +412,7 @@ stroke-width: 1px;
     <g transform="translate(352.063, 284.2205)">
         <text x="15.6472" y="45.3543">v</text>
         <text x="15.6472" y="15.1181">V</text>
-        <text x="46.9417" y="45.3543">⍽</text>
+        <text x="46.9417" y="45.3543">╫</text>
         <text x="46.9417" y="15.1181">←</text>
     </g>
     <rect height="60.4724" kdd:x-key-name="AB05" rx="10" width="62.589" x="422.4756" y="284.2205"/>

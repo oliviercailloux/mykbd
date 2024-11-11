@@ -3,7 +3,15 @@
     <style>text.annotation {
   font-size: 60%;
   text-anchor: start;
-}</style>
+}
+text.ucp {
+  text-transform: lowercase;
+  font-size: 40%;
+}
+text.ucp::first-letter {
+  text-transform: uppercase;
+}
+</style>
     <style>text {
 text-anchor: middle;
 dominant-baseline: middle;
@@ -88,17 +96,18 @@ font-size: 16px;
     <g transform="translate(1056.189, 0)">
         <text x="31.2945" y="30.2362">⌦</text>
     </g>
-    <text class="annotation" x="5" y="66.0551">dead_cedilla</text>
     <rect height="60.4724" kdd:x-key-name="TLDE" rx="10" width="62.589" x="0" y="71.0551"/>
+    <text class="annotation" style="" x="5" y="66.0551">dead_cedilla</text>
     <g transform="translate(0, 71.0551)">
-        <text x="15.6472" y="45.3543">²</text>
-        <text x="15.6472" y="15.1181">³</text>
-        <text x="46.9417" y="45.3543">¹</text>
-        <text x="46.9417" y="15.1181">¸</text>
+        <text x="10.4315" y="45.3543">²</text>
+        <text x="10.4315" y="15.1181">³</text>
+        <text x="31.2945" y="45.3543">¹</text>
+        <text x="31.2945" y="15.1181">¸</text>
+        <text x="52.1575" y="45.3543">∞</text>
     </g>
-    <text class="annotation" x="70.4126" y="66.0551">dead_ogonek</text>
-    <text class="annotation" x="70.4126" y="136.5275">dead_caron</text>
     <rect height="60.4724" kdd:x-key-name="AE01" rx="10" width="62.589" x="70.4126" y="71.0551"/>
+    <text class="annotation" style="" x="70.4126" y="136.5275">dead_caron</text>
+    <text class="annotation" style="" x="70.4126" y="66.0551">dead_ogonek</text>
     <g transform="translate(70.4126, 71.0551)">
         <text x="7.8236" y="45.3543">&amp;</text>
         <text x="7.8236" y="15.1181">1</text>
@@ -111,29 +120,38 @@ font-size: 16px;
     </g>
     <rect height="60.4724" kdd:x-key-name="AE02" rx="10" width="62.589" x="140.8252" y="71.0551"/>
     <g transform="translate(140.8252, 71.0551)">
-        <text x="15.6472" y="45.3543">é</text>
-        <text x="15.6472" y="15.1181">2</text>
-        <text x="46.9417" y="45.3543">~</text>
-        <text x="46.9417" y="15.1181">É</text>
+        <text x="10.4315" y="45.3543">é</text>
+        <text x="10.4315" y="15.1181">2</text>
+        <text x="31.2945" y="45.3543">~</text>
+        <text x="31.2945" y="15.1181">É</text>
+        <text x="52.1575" y="45.3543">É</text>
     </g>
-    <text class="annotation" x="221.2378" y="66.0551">dead_breve</text>
     <rect height="60.4724" kdd:x-key-name="AE03" rx="10" width="62.589" x="211.2378" y="71.0551"/>
+    <text class="annotation" style="" x="221.2378" y="66.0551">dead_breve</text>
     <g transform="translate(211.2378, 71.0551)">
         <text x="15.6472" y="45.3543">"</text>
         <text x="15.6472" y="15.1181">3</text>
         <text x="46.9417" y="45.3543">#</text>
         <text x="46.9417" y="15.1181">˘</text>
     </g>
-    <text class="annotation" x="296.6504" y="66.0551">EM DASH</text>
     <rect height="60.4724" kdd:x-key-name="AE04" rx="10" width="62.589" x="281.6504" y="71.0551"/>
+    <a href="https://www.fileformat.info/info/unicode/char/2010/">
+        <text class="annotation ucp" style="" x="316.6504" y="136.5275">HYPHEN</text>
+    </a>
+    <a href="https://www.fileformat.info/info/unicode/char/2014/">
+        <text class="annotation ucp" style="" x="296.6504" y="66.0551">EM DASH</text>
+    </a>
     <g transform="translate(281.6504, 71.0551)">
-        <text x="15.6472" y="45.3543">'</text>
-        <text x="15.6472" y="15.1181">4</text>
-        <text x="46.9417" y="45.3543">{</text>
-        <text x="46.9417" y="15.1181">—</text>
+        <text x="10.4315" y="45.3543">'</text>
+        <text x="10.4315" y="15.1181">4</text>
+        <text x="31.2945" y="45.3543">{</text>
+        <text x="31.2945" y="15.1181">—</text>
+        <text x="52.1575" y="45.3543">‐</text>
     </g>
-    <text class="annotation" x="357.063" y="66.0551">EN DASH</text>
     <rect height="60.4724" kdd:x-key-name="AE05" rx="10" width="62.589" x="352.063" y="71.0551"/>
+    <a href="https://www.fileformat.info/info/unicode/char/2013/">
+        <text class="annotation ucp" style="" x="357.063" y="66.0551">EN DASH</text>
+    </a>
     <g transform="translate(352.063, 71.0551)">
         <text x="7.8236" y="45.3543">(</text>
         <text x="7.8236" y="15.1181">5</text>
@@ -144,9 +162,13 @@ font-size: 16px;
         <text x="54.7654" y="45.3543">ⅼ</text>
         <text x="54.7654" y="15.1181">Ⅼ</text>
     </g>
-    <text class="annotation" x="412.4756" y="66.0551">NON-BREAKING HYPHEN</text>
-    <text class="annotation" x="432.4756" y="136.5275">minus</text>
     <rect height="60.4724" kdd:x-key-name="AE06" rx="10" width="62.589" x="422.4756" y="71.0551"/>
+    <a href="https://www.fileformat.info/info/unicode/char/2d/">
+        <text class="annotation ucp" style="" x="427.4756" y="136.5275">HYPHEN-MINUS</text>
+    </a>
+    <a href="https://www.fileformat.info/info/unicode/char/2011/">
+        <text class="annotation ucp" style="" x="412.4756" y="66.0551">NON-BREAKING HYPHEN</text>
+    </a>
     <g transform="translate(422.4756, 71.0551)">
         <text x="10.4315" y="45.3543">-</text>
         <text x="10.4315" y="15.1181">6</text>
@@ -155,20 +177,26 @@ font-size: 16px;
         <text x="52.1575" y="45.3543">ⅾ</text>
         <text x="52.1575" y="15.1181">Ⅾ</text>
     </g>
-    <text class="annotation" x="512.8882" y="136.5275">grave</text>
     <rect height="60.4724" kdd:x-key-name="AE07" rx="10" width="62.589" x="492.8882" y="71.0551"/>
+    <a href="https://www.fileformat.info/info/unicode/char/60/">
+        <text class="annotation ucp" style="" x="512.8882" y="136.5275">GRAVE ACCENT</text>
+    </a>
     <g transform="translate(492.8882, 71.0551)">
-        <text x="15.6473" y="45.3543">è</text>
-        <text x="15.6473" y="15.1181">7</text>
-        <text x="46.9418" y="45.3543">`</text>
-        <text x="46.9418" y="15.1181">È</text>
+        <text x="10.4315" y="45.3543">è</text>
+        <text x="10.4315" y="15.1181">7</text>
+        <text x="31.2945" y="45.3543">`</text>
+        <text x="31.2945" y="15.1181">È</text>
+        <text x="52.1575" y="45.3543">⟦</text>
+        <text x="52.1575" y="15.1181">⟨</text>
     </g>
     <rect height="60.4724" kdd:x-key-name="AE08" rx="10" width="62.589" x="563.3008" y="71.0551"/>
     <g transform="translate(563.3008, 71.0551)">
-        <text x="15.6472" y="45.3543">_</text>
-        <text x="15.6472" y="15.1181">8</text>
-        <text x="46.9417" y="45.3543">\</text>
-        <text x="46.9417" y="15.1181">™</text>
+        <text x="10.4315" y="45.3543">_</text>
+        <text x="10.4315" y="15.1181">8</text>
+        <text x="31.2945" y="45.3543">\</text>
+        <text x="31.2945" y="15.1181">™</text>
+        <text x="52.1575" y="45.3543">⟧</text>
+        <text x="52.1575" y="15.1181">⟩</text>
     </g>
     <rect height="60.4724" kdd:x-key-name="AE09" rx="10" width="62.589" x="633.7134" y="71.0551"/>
     <g transform="translate(633.7134, 71.0551)">
@@ -188,8 +216,10 @@ font-size: 16px;
         <text x="54.7654" y="45.3543">ⅿ</text>
         <text x="54.7654" y="15.1181">Ⅿ</text>
     </g>
-    <text class="annotation" x="774.5386" y="66.0551">degree</text>
     <rect height="60.4724" kdd:x-key-name="AE11" rx="10" width="62.589" x="774.5386" y="71.0551"/>
+    <a href="https://www.fileformat.info/info/unicode/char/b0/">
+        <text class="annotation ucp" style="" x="774.5386" y="66.0551">DEGREE SIGN</text>
+    </a>
     <g transform="translate(774.5386, 71.0551)">
         <text x="15.6473" y="45.3543">)</text>
         <text x="15.6473" y="15.1181">°</text>
@@ -198,10 +228,14 @@ font-size: 16px;
     </g>
     <rect height="60.4724" kdd:x-key-name="AE12" rx="10" width="62.589" x="844.9512" y="71.0551"/>
     <g transform="translate(844.9512, 71.0551)">
-        <text x="15.6472" y="45.3543">=</text>
-        <text x="15.6472" y="15.1181">+</text>
-        <text x="46.9417" y="45.3543">}</text>
-        <text x="46.9417" y="15.1181">±</text>
+        <text x="7.8236" y="45.3543">=</text>
+        <text x="7.8236" y="15.1181">+</text>
+        <text x="23.4709" y="45.3543">}</text>
+        <text x="23.4709" y="15.1181">±</text>
+        <text x="39.1181" y="45.3543">≟</text>
+        <text x="39.1181" y="15.1181">∓</text>
+        <text x="54.7654" y="45.3543"/>
+        <text x="54.7654" y="15.1181">∫</text>
     </g>
     <rect height="60.4724" kdd:x-key-name="BKSP" rx="10" width="133.0016" x="915.3638" y="71.0551"/>
     <g transform="translate(915.3638, 71.0551)">
@@ -210,7 +244,8 @@ font-size: 16px;
     </g>
     <rect height="60.4724" kdd:x-key-name="INS" rx="10" width="62.589" x="1056.189" y="71.0551"/>
     <g transform="translate(1056.189, 71.0551)">
-        <text x="31.2945" y="30.2362">⇱</text>
+        <text x="15.6472" y="30.2362">⇱</text>
+        <text x="46.9417" y="30.2362">⇱</text>
     </g>
     <rect height="60.4724" kdd:x-key-name="TAB" rx="10" width="97.7953" x="0" y="142.1102"/>
     <g transform="translate(0, 142.1102)">
@@ -235,8 +270,10 @@ font-size: 16px;
         <text x="52.1575" y="45.3543">ζ</text>
         <text x="52.1575" y="15.1181">Ζ</text>
     </g>
-    <text class="annotation" x="266.4441" y="137.1102">cent</text>
     <rect height="60.4724" kdd:x-key-name="AD03" rx="10" width="62.589" x="246.4441" y="142.1102"/>
+    <a href="https://www.fileformat.info/info/unicode/char/a2/">
+        <text class="annotation ucp" style="" x="266.4441" y="137.1102">CENT SIGN</text>
+    </a>
     <g transform="translate(246.4441, 142.1102)">
         <text x="10.4315" y="45.3543">e</text>
         <text x="10.4315" y="15.1181">E</text>
@@ -247,16 +284,21 @@ font-size: 16px;
     </g>
     <rect height="60.4724" kdd:x-key-name="AD04" rx="10" width="62.589" x="316.8567" y="142.1102"/>
     <g transform="translate(316.8567, 142.1102)">
-        <text x="10.4315" y="45.3543">r</text>
-        <text x="10.4315" y="15.1181">R</text>
-        <text x="31.2945" y="45.3543">ê</text>
-        <text x="31.2945" y="15.1181">Ê</text>
-        <text x="52.1575" y="45.3543">ρ</text>
-        <text x="52.1575" y="15.1181">Ρ</text>
+        <text x="7.8236" y="45.3543">r</text>
+        <text x="7.8236" y="15.1181">R</text>
+        <text x="23.4709" y="45.3543">ê</text>
+        <text x="23.4709" y="15.1181">Ê</text>
+        <text x="39.1181" y="45.3543">ρ</text>
+        <text x="39.1181" y="15.1181">Ρ</text>
+        <text x="54.7654" y="45.3543">ℝ</text>
     </g>
-    <text class="annotation" x="389.2693" y="137.1102">THORN</text>
-    <text class="annotation" x="397.2693" y="207.5826">thorn</text>
     <rect height="60.4724" kdd:x-key-name="AD05" rx="10" width="62.589" x="387.2693" y="142.1102"/>
+    <a href="https://www.fileformat.info/info/unicode/char/fe/">
+        <text class="annotation ucp" style="" x="397.2693" y="207.5826">LATIN SMALL LETTER THORN</text>
+    </a>
+    <a href="https://www.fileformat.info/info/unicode/char/de/">
+        <text class="annotation ucp" style="" x="347.2693" y="137.1102">LATIN CAPITAL LETTER THORN</text>
+    </a>
     <g transform="translate(387.2693, 142.1102)">
         <text x="10.4315" y="45.3543">t</text>
         <text x="10.4315" y="15.1181">T</text>
@@ -303,26 +345,34 @@ font-size: 16px;
     </g>
     <rect height="60.4724" kdd:x-key-name="AD10" rx="10" width="62.589" x="739.3323" y="142.1102"/>
     <g transform="translate(739.3323, 142.1102)">
-        <text x="10.4315" y="45.3543">p</text>
-        <text x="10.4315" y="15.1181">P</text>
-        <text x="31.2945" y="45.3543">ô</text>
-        <text x="31.2945" y="15.1181">Ô</text>
-        <text x="52.1575" y="45.3543">π</text>
-        <text x="52.1575" y="15.1181">Π</text>
+        <text x="7.8236" y="45.3543">p</text>
+        <text x="7.8236" y="15.1181">P</text>
+        <text x="23.4709" y="45.3543">ô</text>
+        <text x="23.4709" y="15.1181">Ô</text>
+        <text x="39.1181" y="45.3543">π</text>
+        <text x="39.1181" y="15.1181">Π</text>
+        <text x="54.7654" y="45.3543">ℙ</text>
+        <text x="54.7654" y="15.1181">℘</text>
     </g>
-    <text class="annotation" x="774.7449" y="137.1102">dead_diaeresis</text>
-    <text class="annotation" x="844.7449" y="137.1102">dead_abovering</text>
-    <text class="annotation" x="829.7449" y="207.5826">dead_tilde</text>
     <rect height="60.4724" kdd:x-key-name="AD11" rx="10" width="62.589" x="809.7449" y="142.1102"/>
+    <text class="annotation" style="" x="829.7449" y="207.5826">dead_tilde</text>
+    <text class="annotation" style="" x="844.7449" y="137.1102">dead_abovering</text>
+    <text class="annotation" style="" x="774.7449" y="137.1102">dead_diaeresis</text>
     <g transform="translate(809.7449, 142.1102)">
-        <text x="15.6473" y="45.3543">^</text>
-        <text x="15.6473" y="15.1181">̈</text>
-        <text x="46.9418" y="45.3543">̃</text>
-        <text x="46.9418" y="15.1181">˚</text>
+        <text x="10.4315" y="45.3543">^</text>
+        <text x="10.4315" y="15.1181">̈</text>
+        <text x="31.2945" y="45.3543">̃</text>
+        <text x="31.2945" y="15.1181">˚</text>
+        <text x="52.1575" y="45.3543">^</text>
+        <text x="52.1575" y="15.1181">√</text>
     </g>
-    <text class="annotation" x="925.1575" y="137.1102">Ooblique</text>
-    <text class="annotation" x="909.1575" y="175.3464">oslash</text>
     <rect height="60.4724" kdd:x-key-name="AD12" rx="10" width="62.589" x="880.1575" y="142.1102"/>
+    <a href="https://www.fileformat.info/info/unicode/char/f8/">
+        <text class="annotation ucp" style="font-size: 25%;" x="882.1575" y="175.3464">LATIN SMALL LETTER O WITH STROKE</text>
+    </a>
+    <a href="https://www.fileformat.info/info/unicode/char/d8/">
+        <text class="annotation ucp" style="" x="925.1575" y="137.1102">LATIN CAPITAL LETTER O WITH STROKE</text>
+    </a>
     <g transform="translate(880.1575, 142.1102)">
         <text x="15.6472" y="45.3543">$</text>
         <text x="15.6472" y="15.1181">£</text>
@@ -344,15 +394,18 @@ font-size: 16px;
     </g>
     <rect height="60.4724" kdd:x-key-name="AC01" rx="10" width="62.589" x="123.2220" y="213.1654"/>
     <g transform="translate(123.222, 213.1654)">
-        <text x="10.4315" y="45.3543">q</text>
-        <text x="10.4315" y="15.1181">Q</text>
-        <text x="31.2945" y="45.3543">ä</text>
-        <text x="31.2945" y="15.1181">Ä</text>
-        <text x="52.1575" y="45.3543">θ</text>
-        <text x="52.1575" y="15.1181">Θ</text>
+        <text x="7.8236" y="45.3543">q</text>
+        <text x="7.8236" y="15.1181">Q</text>
+        <text x="23.4709" y="45.3543">ä</text>
+        <text x="23.4709" y="15.1181">Ä</text>
+        <text x="39.1181" y="45.3543">θ</text>
+        <text x="39.1181" y="15.1181">Θ</text>
+        <text x="54.7654" y="45.3543">ℚ</text>
     </g>
-    <text class="annotation" x="183.6346" y="208.1654">doublelowquotemark</text>
     <rect height="60.4724" kdd:x-key-name="AC02" rx="10" width="62.589" x="193.6346" y="213.1654"/>
+    <a href="https://www.fileformat.info/info/unicode/char/201e/">
+        <text class="annotation ucp" style="" x="183.6346" y="208.1654">DOUBLE LOW-9 QUOTATION MARK</text>
+    </a>
     <g transform="translate(193.6346, 213.1654)">
         <text x="7.8236" y="45.3543">s</text>
         <text x="7.8236" y="15.1181">S</text>
@@ -361,6 +414,7 @@ font-size: 16px;
         <text x="39.1181" y="45.3543">σ</text>
         <text x="39.1181" y="15.1181">Σ</text>
         <text x="54.7654" y="45.3543">ς</text>
+        <text x="54.7654" y="15.1181">∑</text>
     </g>
     <rect height="60.4724" kdd:x-key-name="AC03" rx="10" width="62.589" x="264.0472" y="213.1654"/>
     <g transform="translate(264.0472, 213.1654)">
@@ -371,9 +425,13 @@ font-size: 16px;
         <text x="52.1575" y="45.3543">δ</text>
         <text x="52.1575" y="15.1181">Δ</text>
     </g>
-    <text class="annotation" x="294.4595" y="208.1654">singlelowquotemark</text>
-    <text class="annotation" x="294.4595" y="278.6378">leftsinglequotemark</text>
     <rect height="60.4724" kdd:x-key-name="AC04" rx="10" width="62.589" x="334.4595" y="213.1654"/>
+    <a href="https://www.fileformat.info/info/unicode/char/2018/">
+        <text class="annotation ucp" style="" x="294.4595" y="278.6378">LEFT SINGLE QUOTATION MARK</text>
+    </a>
+    <a href="https://www.fileformat.info/info/unicode/char/201a/">
+        <text class="annotation ucp" style="" x="294.4595" y="208.1654">SINGLE LOW-9 QUOTATION MARK</text>
+    </a>
     <g transform="translate(334.4595, 213.1654)">
         <text x="10.4315" y="45.3543">f</text>
         <text x="10.4315" y="15.1181">F</text>
@@ -382,8 +440,10 @@ font-size: 16px;
         <text x="52.1575" y="45.3543">φ</text>
         <text x="52.1575" y="15.1181">Φ</text>
     </g>
-    <text class="annotation" x="394.8724" y="278.6378">rightsinglequotemark</text>
     <rect height="60.4724" kdd:x-key-name="AC05" rx="10" width="62.589" x="404.8724" y="213.1654"/>
+    <a href="https://www.fileformat.info/info/unicode/char/2019/">
+        <text class="annotation ucp" style="" x="394.8724" y="278.6378">RIGHT SINGLE QUOTATION MARK</text>
+    </a>
     <g transform="translate(404.8724, 213.1654)">
         <text x="10.4315" y="45.3543">g</text>
         <text x="10.4315" y="15.1181">G</text>
@@ -437,22 +497,26 @@ font-size: 16px;
         <text x="52.1575" y="45.3543">μ</text>
         <text x="52.1575" y="15.1181">Μ</text>
     </g>
-    <text class="annotation" x="867.348" y="278.6378">dead_acute</text>
     <rect height="60.4724" kdd:x-key-name="AC11" rx="10" width="62.589" x="827.3480" y="213.1654"/>
+    <text class="annotation" style="" x="867.348" y="278.6378">dead_acute</text>
     <g transform="translate(827.348, 213.1654)">
-        <text x="15.6472" y="45.3543">ù</text>
-        <text x="15.6472" y="15.1181">%</text>
-        <text x="46.9417" y="45.3543">´</text>
-        <text x="46.9417" y="15.1181">Ù</text>
+        <text x="10.4315" y="45.3543">ù</text>
+        <text x="10.4315" y="15.1181">%</text>
+        <text x="31.2945" y="45.3543">´</text>
+        <text x="31.2945" y="15.1181">Ù</text>
+        <text x="52.1575" y="45.3543"/>
+        <text x="52.1575" y="15.1181">‰</text>
     </g>
-    <text class="annotation" x="902.7606" y="208.1654">dead_macron</text>
-    <text class="annotation" x="937.7606" y="278.6378">dead_grave</text>
     <rect height="60.4724" kdd:x-key-name="BKSL" rx="10" width="62.589" x="897.7606" y="213.1654"/>
+    <text class="annotation" style="" x="937.7606" y="278.6378">dead_grave</text>
+    <text class="annotation" style="" x="902.7606" y="208.1654">dead_macron</text>
     <g transform="translate(897.7606, 213.1654)">
-        <text x="15.6473" y="45.3543">*</text>
-        <text x="15.6473" y="15.1181">µ</text>
-        <text x="46.9418" y="45.3543">̀</text>
-        <text x="46.9418" y="15.1181">̄</text>
+        <text x="10.4315" y="45.3543">*</text>
+        <text x="10.4315" y="15.1181">µ</text>
+        <text x="31.2945" y="45.3543">̀</text>
+        <text x="31.2945" y="15.1181">̄</text>
+        <text x="52.1575" y="45.3543">§</text>
+        <text x="52.1575" y="15.1181">¶</text>
     </g>
     <rect height="60.4724" kdd:x-key-name="PGUP" rx="10" width="62.589" x="1056.189" y="213.1654"/>
     <g transform="translate(1056.189, 213.1654)">
@@ -469,9 +533,13 @@ font-size: 16px;
         <text x="46.9417" y="45.3543">≤</text>
         <text x="46.9417" y="15.1181">≥</text>
     </g>
-    <text class="annotation" x="95.8252" y="279.2205">leftdoublequotemark</text>
-    <text class="annotation" x="120.8252" y="349.6929">guillemotleft</text>
     <rect height="60.4724" kdd:x-key-name="AB01" rx="10" width="62.589" x="140.8252" y="284.2205"/>
+    <a href="https://www.fileformat.info/info/unicode/char/ab/">
+        <text class="annotation ucp" style="" x="50.8252" y="349.6929">LEFT-POINTING DOUBLE ANGLE QUOTATION MARK</text>
+    </a>
+    <a href="https://www.fileformat.info/info/unicode/char/201c/">
+        <text class="annotation ucp" style="" x="95.8252" y="279.2205">LEFT DOUBLE QUOTATION MARK</text>
+    </a>
     <g transform="translate(140.8252, 284.2205)">
         <text x="10.4315" y="45.3543">w</text>
         <text x="10.4315" y="15.1181">W</text>
@@ -480,9 +548,13 @@ font-size: 16px;
         <text x="52.1575" y="45.3543">ω</text>
         <text x="52.1575" y="15.1181">Ω</text>
     </g>
-    <text class="annotation" x="196.2378" y="279.2205">rightdoublequotemark</text>
-    <text class="annotation" x="191.2378" y="349.6929">guillemotright</text>
     <rect height="60.4724" kdd:x-key-name="AB02" rx="10" width="62.589" x="211.2378" y="284.2205"/>
+    <a href="https://www.fileformat.info/info/unicode/char/bb/">
+        <text class="annotation ucp" style="" x="191.2378" y="349.6929">RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK</text>
+    </a>
+    <a href="https://www.fileformat.info/info/unicode/char/201d/">
+        <text class="annotation ucp" style="" x="196.2378" y="279.2205">RIGHT DOUBLE QUOTATION MARK</text>
+    </a>
     <g transform="translate(211.2378, 284.2205)">
         <text x="10.4315" y="45.3543">x</text>
         <text x="10.4315" y="15.1181">X</text>
@@ -493,15 +565,18 @@ font-size: 16px;
     </g>
     <rect height="60.4724" kdd:x-key-name="AB03" rx="10" width="62.589" x="281.6504" y="284.2205"/>
     <g transform="translate(281.6504, 284.2205)">
-        <text x="10.4315" y="45.3543">c</text>
-        <text x="10.4315" y="15.1181">C</text>
-        <text x="31.2945" y="45.3543">©</text>
-        <text x="31.2945" y="15.1181">®</text>
-        <text x="52.1575" y="45.3543">ξ</text>
-        <text x="52.1575" y="15.1181">Ξ</text>
+        <text x="7.8236" y="45.3543">c</text>
+        <text x="7.8236" y="15.1181">C</text>
+        <text x="23.4709" y="45.3543">©</text>
+        <text x="23.4709" y="15.1181">®</text>
+        <text x="39.1181" y="45.3543">ξ</text>
+        <text x="39.1181" y="15.1181">Ξ</text>
+        <text x="54.7654" y="45.3543">ℂ</text>
     </g>
-    <text class="annotation" x="312.063" y="349.6929">NARROW NO-BREAK SPACE</text>
     <rect height="60.4724" kdd:x-key-name="AB04" rx="10" width="62.589" x="352.063" y="284.2205"/>
+    <a href="https://www.fileformat.info/info/unicode/char/202f/">
+        <text class="annotation ucp" style="" x="342.063" y="349.6929">NARROW NO-BREAK SPACE</text>
+    </a>
     <g transform="translate(352.063, 284.2205)">
         <text x="10.4315" y="45.3543">v</text>
         <text x="10.4315" y="15.1181">V</text>
@@ -521,38 +596,58 @@ font-size: 16px;
     </g>
     <rect height="60.4724" kdd:x-key-name="AB06" rx="10" width="62.589" x="492.8882" y="284.2205"/>
     <g transform="translate(492.8882, 284.2205)">
-        <text x="10.4315" y="45.3543">n</text>
-        <text x="10.4315" y="15.1181">N</text>
-        <text x="31.2945" y="45.3543">¬</text>
-        <text x="31.2945" y="15.1181">→</text>
-        <text x="52.1575" y="45.3543">ν</text>
-        <text x="52.1575" y="15.1181">Ν</text>
+        <text x="7.8236" y="45.3543">n</text>
+        <text x="7.8236" y="15.1181">N</text>
+        <text x="23.4709" y="45.3543">¬</text>
+        <text x="23.4709" y="15.1181">→</text>
+        <text x="39.1181" y="45.3543">ν</text>
+        <text x="39.1181" y="15.1181">Ν</text>
+        <text x="54.7654" y="45.3543">ℕ</text>
     </g>
     <rect height="60.4724" kdd:x-key-name="AB07" rx="10" width="62.589" x="563.3008" y="284.2205"/>
     <g transform="translate(563.3008, 284.2205)">
-        <text x="15.6472" y="45.3543">,</text>
-        <text x="15.6472" y="15.1181">?</text>
-        <text x="46.9417" y="45.3543">¿</text>
-        <text x="46.9417" y="15.1181">…</text>
+        <text x="7.8236" y="45.3543">,</text>
+        <text x="7.8236" y="15.1181">?</text>
+        <text x="23.4709" y="45.3543">¿</text>
+        <text x="23.4709" y="15.1181">…</text>
+        <text x="39.1181" y="45.3543">⁈</text>
+        <text x="39.1181" y="15.1181">⁉</text>
+        <text x="54.7654" y="45.3543">⁇</text>
     </g>
-    <text class="annotation" x="643.7134" y="279.2205">DOT OPERATOR</text>
     <rect height="60.4724" kdd:x-key-name="AB08" rx="10" width="62.589" x="633.7134" y="284.2205"/>
+    <a href="https://www.fileformat.info/info/unicode/char/22c5/">
+        <text class="annotation ucp" style="" x="653.7134" y="279.2205">DOT OPERATOR</text>
+    </a>
     <g transform="translate(633.7134, 284.2205)">
-        <text x="15.6473" y="45.3543">;</text>
-        <text x="15.6473" y="15.1181">.</text>
-        <text x="46.9418" y="45.3543">×</text>
-        <text x="46.9418" y="15.1181">⋅</text>
+        <text x="7.8236" y="45.3543">;</text>
+        <text x="7.8236" y="15.1181">.</text>
+        <text x="23.4709" y="45.3543">×</text>
+        <text x="23.4709" y="15.1181">⋅</text>
+        <text x="39.1181" y="45.3543">⨯</text>
+        <text x="39.1181" y="15.1181">∘</text>
+        <text x="54.7654" y="45.3543"/>
+        <text x="54.7654" y="15.1181">·</text>
     </g>
-    <text class="annotation" x="719.126" y="279.2205">DIVISION SLASH</text>
     <rect height="60.4724" kdd:x-key-name="AB09" rx="10" width="62.589" x="704.126" y="284.2205"/>
+    <a href="https://www.fileformat.info/info/unicode/char/2044/">
+        <text class="annotation ucp" style="" x="759.126" y="279.2205">FRACTION SLASH</text>
+    </a>
+    <a href="https://www.fileformat.info/info/unicode/char/2215/">
+        <text class="annotation ucp" style="" x="714.126" y="279.2205">DIVISION SLASH</text>
+    </a>
     <g transform="translate(704.126, 284.2205)">
-        <text x="15.6472" y="45.3543">:</text>
-        <text x="15.6472" y="15.1181">/</text>
-        <text x="46.9417" y="45.3543">÷</text>
-        <text x="46.9417" y="15.1181">∕</text>
+        <text x="7.8236" y="45.3543">:</text>
+        <text x="7.8236" y="15.1181">/</text>
+        <text x="23.4709" y="45.3543">÷</text>
+        <text x="23.4709" y="15.1181">∕</text>
+        <text x="39.1181" y="45.3543">∝</text>
+        <text x="39.1181" y="15.1181">⁄</text>
+        <text x="54.7654" y="45.3543">∶</text>
     </g>
-    <text class="annotation" x="804.5386" y="279.2205">MINUS SIGN</text>
     <rect height="60.4724" kdd:x-key-name="AB10" rx="10" width="80.1921" x="774.5386" y="284.2205"/>
+    <a href="https://www.fileformat.info/info/unicode/char/2212/">
+        <text class="annotation ucp" style="" x="804.5386" y="279.2205">MINUS SIGN</text>
+    </a>
     <g transform="translate(774.5386, 284.2205)">
         <text x="20.048" y="45.3543">!</text>
         <text x="20.048" y="15.1181">§</text>
@@ -584,12 +679,14 @@ font-size: 16px;
         <text x="20.048" y="30.2362">⎇</text>
         <text x="60.1441" y="30.2362">◆</text>
     </g>
-    <text class="annotation" x="544.0472" y="350.2756">nobreakspace</text>
     <rect height="60.4724" kdd:x-key-name="SPCE" rx="10" width="397.0488" x="264.0472" y="355.2756"/>
+    <a href="https://www.fileformat.info/info/unicode/char/a0/">
+        <text class="annotation ucp" style="" x="544.0472" y="350.2756">NO-BREAK SPACE</text>
+    </a>
     <g transform="translate(264.0472, 355.2756)">
         <text x="99.2622" y="45.3543">␣</text>
         <text x="99.2622" y="15.1181">␣</text>
-        <text x="297.7866" y="45.3543">␣</text>
+        <text x="297.7866" y="45.3543"/>
         <text x="297.7866" y="15.1181">⍽</text>
     </g>
     <rect height="60.4724" kdd:x-key-name="RALT" rx="10" width="80.1921" x="668.9197" y="355.2756"/>
