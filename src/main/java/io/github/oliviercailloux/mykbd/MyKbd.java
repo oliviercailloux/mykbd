@@ -9,7 +9,7 @@ import com.google.common.collect.Iterables;
 import com.google.common.io.MoreFiles;
 import com.google.common.io.Resources;
 import io.github.oliviercailloux.geometry.Displacement;
-import io.github.oliviercailloux.jaris.xml.DomHelper;
+import io.github.oliviercailloux.geometry.Point;
 import io.github.oliviercailloux.keyboardd.mapping.KeyboardMap;
 import io.github.oliviercailloux.keyboardd.mapping.XkbSymbolsReader;
 import io.github.oliviercailloux.keyboardd.mnemonics.CanonicalKeyboardMap;
@@ -19,8 +19,11 @@ import io.github.oliviercailloux.keyboardd.mnemonics.ImplicitUcp;
 import io.github.oliviercailloux.keyboardd.mnemonics.Mnemonics;
 import io.github.oliviercailloux.keyboardd.representable.CanonicalKeyboardMapRepresenter;
 import io.github.oliviercailloux.keyboardd.representable.SvgKeyboard;
+import io.github.oliviercailloux.keyboardd.representable.SvgRepresentedKeyboard;
+import io.github.oliviercailloux.keyboardd.representable.SvgXKey;
 import io.github.oliviercailloux.keyboardd.representable.XKeyNamesAndRepresenter;
 import io.github.oliviercailloux.keyboardd.xkeys.Xkeys;
+import io.github.oliviercailloux.mykbd.Pimper.Position;
 import io.github.oliviercailloux.svgb.RectangleElement;
 import io.github.oliviercailloux.svgb.StyleElement;
 import io.github.oliviercailloux.svgb.SvgDocumentHelper;
@@ -29,20 +32,22 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Optional;
-import org.w3c.dom.Document;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.w3c.dom.Element;
 
 public class MyKbd {
-  private static final DomHelper DOM_HELPER = DomHelper.domHelper();
+  @SuppressWarnings("unused")
+  private static final Logger LOGGER = LoggerFactory.getLogger(MyKbd.class);
+  
 
   public static MyKbd create() throws IOException {
     return new MyKbd();
   }
 
   private CanonicalKeyboardMap canonMap;
-  private SvgKeyboard representedKeyboard;
-  private SvgDocumentHelper svgHelper;
-  private Displacement acrossFirstRect;
+  private SvgRepresentedKeyboard representedKeyboard;
+  private Point sizeFirstRect;
   private double up;
   private double middle;
   private double down;
@@ -50,27 +55,29 @@ public class MyKbd {
   private MyKbd() throws IOException {
     KeyboardMap keyboardMap = MyKbd.keyboardMap();
 
-    SvgKeyboard inputSvg = SvgKeyboard.using(DOM_HELPER.asDocument(
+    SvgKeyboard inputSvg = SvgKeyboard.using(App.DOM_HELPER.asDocument(
         Resources.asByteSource(MyKbd.class.getResource("Elite K70 unlabeled styled.svg"))));
     inputSvg.setFontSize(16d);
 
     KeyboardMap map = XkbSymbolsReader.common().overwrite(keyboardMap);
     canonMap = CanonicalKeyboardMap
         .canonicalize(map.canonicalize(Xkeys.latest().canonicalByAlias()), Mnemonics.latest());
-    XKeyNamesAndRepresenter representer =
+        CanonicalKeyboardMapRepresenter representer =
         CanonicalKeyboardMapRepresenter.from(canonMap, XKeyNamesAndRepresenter::defaultRepresentation);
-    Document represented = inputSvg.withRepresentations(representer::representations);
-    representedKeyboard = SvgKeyboard.using(represented);
-    svgHelper = SvgDocumentHelper.using(represented);
-    acrossFirstRect =
-        representedKeyboard.keyBindingZonesToXKeyName().keySet().iterator().next().zone().across();
+        representedKeyboard = inputSvg.withCanonicalRepresentations(representer);
+    sizeFirstRect =
+        representedKeyboard.svgXKeysToXKeyName().keySet().iterator().next().keyZone().size();
     up = -5d;
-    middle = acrossFirstRect.y() / 2d + 3d;
-    down = acrossFirstRect.y() + 5d;
+    middle = sizeFirstRect.y() / 2d + 3d;
+    down = sizeFirstRect.y() + 5d;
+  }
+
+  private SvgDocumentHelper svgHelper() {
+    return SvgDocumentHelper.using(representedKeyboard.document());
   }
 
   public void write() throws IOException {
-    String result = DOM_HELPER.toString(representedKeyboard.document());
+    String result = App.DOM_HELPER.toString(representedKeyboard.document());
     Files.writeString(Path.of("Elite K70 French.svg"), result);
   }
 
@@ -79,56 +86,72 @@ public class MyKbd {
   }
 
   public void patch() {
-    StyleElement style = svgHelper.style().setContent("""
-        text.annotation {
-          font-size: 60%;
-          text-anchor: start;
+    StyleElement style = svgHelper().style().setContent("""
+        text.annotation_top {
+          font-size: 50%;
+          text-anchor: middle;
+          dominant-baseline: alphabetic;
+        }
+        text.annotation_bottom {
+          font-size: 50%;
+          text-anchor: middle;
         }
         text.ucp {
           text-transform: lowercase;
-          font-size: 40%;
+          font-size: 50%;
         }
         text.ucp::first-letter {
           text-transform: uppercase;
         }
         """);
-    root().insertBefore(style.element(), root().getFirstChild());
-    annotate("TLDE", 4, 5d);
-    annotate("AE01", 4, 0d);
-    annotate("AE01", 3, 0d);
-    annotate("AE03", 4, 10d);
-    annotate("AE04", 4, 15d);
-    annotate("AE04", 5, 35d);
-    annotate("AE05", 4, 5d);
-    annotate("AE06", 4, -10d);
-    annotate("AE06", 1, 5d);
-    annotate("AE07", 3, 20d);
-    annotate("AE11", 2, 0d);
-    annotate("AD03", 4, 20d);
-    annotate("AD05", 4, -40d);
-    annotate("AD05", 3, 10d);
-    annotate("AD11", 2, -35d);
-    annotate("AD11", 4, 35d);
-    annotate("AD11", 3, 20d);
-    annotate("AD12", 4, 45d);
-    annotate("AD12", 3, Displacement.given(2d, middle), "font-size: 25%;");
-    annotate("AC02", 4, -10d);
-    annotate("AC04", 4, -40d);
-    annotate("AC04", 3, -40d);
-    annotate("AC05", 3, -10d);
-    annotate("AC11", 3, 40d);
-    annotate("BKSL", 4, 5d);
-    annotate("BKSL", 3, 40d);
-    annotate("AB01", 4, -45d);
-    annotate("AB01", 3, -90d);
-    annotate("AB02", 4, -15d);
-    annotate("AB02", 3, -20d);
-    annotate("AB04", 3, -10d);
-    annotate("AB08", 4, 20d);
-    annotate("AB09", 4, 10d);
-    annotate("AB09", 6, 55d);
-    annotate("AB10", 4, 30d);
-    annotate("SPCE", 4, 280d);
+
+        representedKeyboard.document().getDocumentElement().insertBefore(style.element(), root().getFirstChild());
+
+    Pimper pimper = Pimper.create(representedKeyboard);
+    pimper.linkAll();
+    // pimper.highlightAll();
+    pimper.annotate(pimper.find("TLDE", 3));
+
+    pimper.annotate(pimper.find("AE01", 3));
+    pimper.annotate(pimper.find("AE01", 2));
+    pimper.annotate(pimper.find("AE02", 2));
+    pimper.annotate(pimper.find("AE03", 3));
+    pimper.annotate(pimper.find("AE04", 3));
+    pimper.annotate(pimper.find("AE04", 4));
+    pimper.annotate(pimper.find("AE05", 3));
+    pimper.annotate(pimper.find("AE06", 3));
+    pimper.annotate(pimper.find("AE06", 0));
+    pimper.annotate(pimper.find("AE07", 2));
+    pimper.annotate(pimper.find("AE11", 1));
+    pimper.annotate(pimper.find("AD03", 3));
+    pimper.annotate(pimper.find("AD05", 2), Position.TOP, 0);
+    pimper.annotate(pimper.find("AD11", 1));
+    pimper.annotate(pimper.find("AD11", 3), Position.BOTTOM, 0);
+    pimper.annotate(pimper.find("AD11", 2));
+    pimper.annotate(pimper.find("AD12", 3));
+    pimper.annotate(pimper.find("AC02", 3));
+    pimper.annotate(pimper.find("AC04", 3));
+    pimper.annotate(pimper.find("AC04", 2));
+    // pimper.annotate(pimper.find("AC05", 2));
+    pimper.annotate(pimper.find("AC11", 2));
+    pimper.annotate(pimper.find("BKSL", 3));
+    pimper.annotate(pimper.find("BKSL", 2));
+    pimper.annotate(pimper.find("AB01", 3));
+    pimper.annotate(pimper.find("AB01", 2));
+    // pimper.annotate(pimper.find("AB02", 3));
+    // pimper.annotate(pimper.find("AB02", 2));
+    pimper.annotate(pimper.find("AB04", 2));
+    pimper.annotate(pimper.find("AB07", 5), Position.BOTTOM, 0);
+    pimper.annotate(pimper.find("AB08", 2), Position.BOTTOM, -30);
+    pimper.annotate(pimper.find("AB08", 3), Position.TOP, 0);
+    pimper.annotate(pimper.find("AB08", 4), Position.BOTTOM, 40);
+    pimper.annotate(pimper.find("AB08", 5), Position.BOTTOM, -5);
+    pimper.annotate(pimper.find("AB09", 1));
+    pimper.annotate(pimper.find("AB09", 3), Position.BOTTOM, 2);
+    pimper.annotate(pimper.find("AB09", 5), Position.TOP, 17);
+    pimper.annotate(pimper.find("AB09", 6), Position.BOTTOM, 12);
+    pimper.annotate(pimper.find("AB10", 3), Position.BOTTOM, -1);
+    pimper.annotate(pimper.find("SPCE", 3), Position.BOTTOM, 0);
   }
 
   private void annotate(String x, int symOrderNumber, double xShift) {
@@ -140,8 +163,9 @@ public class MyKbd {
   }
 
   private void annotate(String x, int symOrderNumber, Displacement move, String style) {
-    ImmutableSet<RectangleElement> rects = representedKeyboard.keyBindingZonesToXKeyName().asMultimap().inverse().get(x);
-    RectangleElement rect = Iterables.getOnlyElement(rects);
+    ImmutableSet<SvgXKey> keys = representedKeyboard.svgXKeys(x);
+    SvgXKey key = Iterables.getOnlyElement(keys);
+    RectangleElement rect = key.rectangle();
     CanonicalKeysymEntry keysym = canonMap.entries(x).get(symOrderNumber - 1);
     String sym;
     String link;
@@ -165,7 +189,7 @@ public class MyKbd {
       }
     }
     TextElement t =
-        svgHelper.text().setBaselineStart(rect.zone().start().plus(move)).setContent(sym);
+        svgHelper().text().setBaselineStart(rect.zone().start().plus(move)).setContent(sym);
     t.element().setAttribute("class", String.join(" ", classes));
     t.element().setAttribute("style", style);
     verify(t.element().getOwnerDocument().equals(rect.element().getOwnerDocument()));
@@ -186,5 +210,9 @@ public class MyKbd {
     return XkbSymbolsReader.read(MoreFiles.asCharSource(
         Path.of(System.getProperty("user.home")).resolve(".config/xkb/symbols/mir"),
         Charsets.UTF_8));
+  }
+
+  public SvgRepresentedKeyboard representedKeyboard() {
+    return representedKeyboard;
   }
 }

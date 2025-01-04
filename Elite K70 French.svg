@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" height="415.7480" width="1118.778" xmlns:kdd="https://io.github.oliviercailloux.keyboardd">
-    <style>text.annotation {
-  font-size: 60%;
-  text-anchor: start;
+    <style>text.annotation_top {
+  font-size: 50%;
+  text-anchor: middle;
+  dominant-baseline: alphabetic;
+}
+text.annotation_bottom {
+  font-size: 50%;
+  text-anchor: middle;
 }
 text.ucp {
   text-transform: lowercase;
-  font-size: 40%;
+  font-size: 50%;
 }
 text.ucp::first-letter {
   text-transform: uppercase;
@@ -32,7 +37,9 @@ font-size: 16px;
   </style>
     <rect height="60.4724" kdd:x-key-name="ESC" rx="10" width="62.589"/>
     <g transform="translate(0, 0)">
-        <text x="31.2945" y="30.2362">⎋</text>
+        <a href="https://www.fileformat.info/info/unicode/char/1b/">
+            <text x="31.2945" y="30.2362">⎋</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="FK01" rx="10" width="62.589" x="70.4126" y="0"/>
     <g transform="translate(70.4126, 0)">
@@ -94,294 +101,679 @@ font-size: 16px;
     </g>
     <rect height="60.4724" kdd:x-key-name="DELE" rx="10" width="62.589" x="1056.189" y="0"/>
     <g transform="translate(1056.189, 0)">
-        <text x="31.2945" y="30.2362">⌦</text>
+        <a href="https://www.fileformat.info/info/unicode/char/7f/">
+            <text x="31.2945" y="30.2362">⌦</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="TLDE" rx="10" width="62.589" x="0" y="71.0551"/>
-    <text class="annotation" style="" x="5" y="66.0551">dead_cedilla</text>
+    <text class="annotation_top" style="" x="31.2945" y="69.0551">dead_cedilla</text>
     <g transform="translate(0, 71.0551)">
-        <text x="10.4315" y="45.3543">²</text>
-        <text x="10.4315" y="15.1181">³</text>
-        <text x="31.2945" y="45.3543">¹</text>
+        <a href="https://www.fileformat.info/info/unicode/char/b2/">
+            <text x="10.4315" y="45.3543">²</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/b3/">
+            <text x="10.4315" y="15.1181">³</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/b9/">
+            <text x="31.2945" y="45.3543">¹</text>
+        </a>
         <text x="31.2945" y="15.1181">¸</text>
-        <text x="52.1575" y="45.3543">∞</text>
+        <a href="https://www.fileformat.info/info/unicode/char/221a/">
+            <text x="52.1575" y="45.3543">√</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/221b/">
+            <text x="52.1575" y="15.1181">∛</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AE01" rx="10" width="62.589" x="70.4126" y="71.0551"/>
-    <text class="annotation" style="" x="70.4126" y="136.5275">dead_caron</text>
-    <text class="annotation" style="" x="70.4126" y="66.0551">dead_ogonek</text>
+    <text class="annotation_bottom" style="" x="93.8835" y="135.5275">dead_caron</text>
+    <text class="annotation_top" style="" x="93.8835" y="69.0551">dead_ogonek</text>
     <g transform="translate(70.4126, 71.0551)">
-        <text x="7.8236" y="45.3543">&amp;</text>
-        <text x="7.8236" y="15.1181">1</text>
+        <a href="https://www.fileformat.info/info/unicode/char/26/">
+            <text x="7.8236" y="45.3543">&amp;</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/31/">
+            <text x="7.8236" y="15.1181">1</text>
+        </a>
         <text x="23.4709" y="45.3543">ˇ</text>
         <text x="23.4709" y="15.1181">˛</text>
-        <text x="39.1181" y="45.3543">ⅰ</text>
-        <text x="39.1181" y="15.1181">Ⅰ</text>
-        <text x="54.7654" y="45.3543">ⅽ</text>
-        <text x="54.7654" y="15.1181">Ⅽ</text>
+        <a href="https://www.fileformat.info/info/unicode/char/2170/">
+            <text x="39.1181" y="45.3543">ⅰ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2160/">
+            <text x="39.1181" y="15.1181">Ⅰ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/217d/">
+            <text x="54.7654" y="45.3543">ⅽ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/216d/">
+            <text x="54.7654" y="15.1181">Ⅽ</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AE02" rx="10" width="62.589" x="140.8252" y="71.0551"/>
+    <a href="https://www.fileformat.info/info/unicode/char/7e/">
+        <text class="annotation_bottom ucp" style="" x="172.1197" y="135.5275">TILDE</text>
+    </a>
     <g transform="translate(140.8252, 71.0551)">
-        <text x="10.4315" y="45.3543">é</text>
-        <text x="10.4315" y="15.1181">2</text>
-        <text x="31.2945" y="45.3543">~</text>
-        <text x="31.2945" y="15.1181">É</text>
-        <text x="52.1575" y="45.3543">É</text>
+        <a href="https://www.fileformat.info/info/unicode/char/e9/">
+            <text x="10.4315" y="45.3543">é</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/32/">
+            <text x="10.4315" y="15.1181">2</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/7e/">
+            <text x="31.2945" y="45.3543">~</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/c9/">
+            <text x="31.2945" y="15.1181">É</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/c9/">
+            <text x="52.1575" y="45.3543">É</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AE03" rx="10" width="62.589" x="211.2378" y="71.0551"/>
-    <text class="annotation" style="" x="221.2378" y="66.0551">dead_breve</text>
+    <text class="annotation_top" style="" x="234.7087" y="69.0551">dead_breve</text>
     <g transform="translate(211.2378, 71.0551)">
-        <text x="15.6472" y="45.3543">"</text>
-        <text x="15.6472" y="15.1181">3</text>
-        <text x="46.9417" y="45.3543">#</text>
-        <text x="46.9417" y="15.1181">˘</text>
+        <a href="https://www.fileformat.info/info/unicode/char/22/">
+            <text x="7.8236" y="45.3543">"</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/33/">
+            <text x="7.8236" y="15.1181">3</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/23/">
+            <text x="23.4709" y="45.3543">#</text>
+        </a>
+        <text x="23.4709" y="15.1181">˘</text>
+        <a href="https://www.fileformat.info/info/unicode/char/22e4/">
+            <text x="39.1181" y="45.3543">⋤</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/22e5/">
+            <text x="39.1181" y="15.1181">⋥</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2291/">
+            <text x="54.7654" y="45.3543">⊑</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2292/">
+            <text x="54.7654" y="15.1181">⊒</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AE04" rx="10" width="62.589" x="281.6504" y="71.0551"/>
     <a href="https://www.fileformat.info/info/unicode/char/2010/">
-        <text class="annotation ucp" style="" x="316.6504" y="136.5275">HYPHEN</text>
+        <text class="annotation_bottom ucp" style="" x="320.7685" y="135.5275">HYPHEN</text>
     </a>
     <a href="https://www.fileformat.info/info/unicode/char/2014/">
-        <text class="annotation ucp" style="" x="296.6504" y="66.0551">EM DASH</text>
+        <text class="annotation_top ucp" style="" x="305.1213" y="69.0551">EM DASH</text>
     </a>
     <g transform="translate(281.6504, 71.0551)">
-        <text x="10.4315" y="45.3543">'</text>
-        <text x="10.4315" y="15.1181">4</text>
-        <text x="31.2945" y="45.3543">{</text>
-        <text x="31.2945" y="15.1181">—</text>
-        <text x="52.1575" y="45.3543">‐</text>
+        <a href="https://www.fileformat.info/info/unicode/char/27/">
+            <text x="7.8236" y="45.3543">'</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/34/">
+            <text x="7.8236" y="15.1181">4</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/7b/">
+            <text x="23.4709" y="45.3543">{</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2014/">
+            <text x="23.4709" y="15.1181">—</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2010/">
+            <text x="39.1181" y="45.3543">‐</text>
+        </a>
+        <text x="39.1181" y="15.1181"/>
+        <a href="https://www.fileformat.info/info/unicode/char/22e2/">
+            <text x="54.7654" y="45.3543">⋢</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/22e3/">
+            <text x="54.7654" y="15.1181">⋣</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AE05" rx="10" width="62.589" x="352.063" y="71.0551"/>
     <a href="https://www.fileformat.info/info/unicode/char/2013/">
-        <text class="annotation ucp" style="" x="357.063" y="66.0551">EN DASH</text>
+        <text class="annotation_top ucp" style="" x="375.5339" y="69.0551">EN DASH</text>
     </a>
     <g transform="translate(352.063, 71.0551)">
-        <text x="7.8236" y="45.3543">(</text>
-        <text x="7.8236" y="15.1181">5</text>
-        <text x="23.4709" y="45.3543">[</text>
-        <text x="23.4709" y="15.1181">–</text>
-        <text x="39.1181" y="45.3543">ⅴ</text>
-        <text x="39.1181" y="15.1181">Ⅴ</text>
-        <text x="54.7654" y="45.3543">ⅼ</text>
-        <text x="54.7654" y="15.1181">Ⅼ</text>
+        <a href="https://www.fileformat.info/info/unicode/char/28/">
+            <text x="7.8236" y="45.3543">(</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/35/">
+            <text x="7.8236" y="15.1181">5</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/5b/">
+            <text x="23.4709" y="45.3543">[</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2013/">
+            <text x="23.4709" y="15.1181">–</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2174/">
+            <text x="39.1181" y="45.3543">ⅴ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2164/">
+            <text x="39.1181" y="15.1181">Ⅴ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/217c/">
+            <text x="54.7654" y="45.3543">ⅼ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/216c/">
+            <text x="54.7654" y="15.1181">Ⅼ</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AE06" rx="10" width="62.589" x="422.4756" y="71.0551"/>
     <a href="https://www.fileformat.info/info/unicode/char/2d/">
-        <text class="annotation ucp" style="" x="427.4756" y="136.5275">HYPHEN-MINUS</text>
+        <text class="annotation_bottom ucp" style="" x="430.2992" y="135.5275">HYPHEN-MINUS</text>
     </a>
     <a href="https://www.fileformat.info/info/unicode/char/2011/">
-        <text class="annotation ucp" style="" x="412.4756" y="66.0551">NON-BREAKING HYPHEN</text>
+        <text class="annotation_top ucp" style="" x="445.9465" y="69.0551">NON-BREAKING HYPHEN</text>
     </a>
     <g transform="translate(422.4756, 71.0551)">
-        <text x="10.4315" y="45.3543">-</text>
-        <text x="10.4315" y="15.1181">6</text>
-        <text x="31.2945" y="45.3543">|</text>
-        <text x="31.2945" y="15.1181">‑</text>
-        <text x="52.1575" y="45.3543">ⅾ</text>
-        <text x="52.1575" y="15.1181">Ⅾ</text>
+        <a href="https://www.fileformat.info/info/unicode/char/2d/">
+            <text x="7.8236" y="45.3543">-</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/36/">
+            <text x="7.8236" y="15.1181">6</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/7c/">
+            <text x="23.4709" y="45.3543">|</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2011/">
+            <text x="23.4709" y="15.1181">‑</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/217e/">
+            <text x="39.1181" y="45.3543">ⅾ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/216e/">
+            <text x="39.1181" y="15.1181">Ⅾ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/21be/">
+            <text x="54.7654" y="45.3543">↾</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AE07" rx="10" width="62.589" x="492.8882" y="71.0551"/>
     <a href="https://www.fileformat.info/info/unicode/char/60/">
-        <text class="annotation ucp" style="" x="512.8882" y="136.5275">GRAVE ACCENT</text>
+        <text class="annotation_bottom ucp" style="" x="516.3591" y="135.5275">GRAVE ACCENT</text>
     </a>
     <g transform="translate(492.8882, 71.0551)">
-        <text x="10.4315" y="45.3543">è</text>
-        <text x="10.4315" y="15.1181">7</text>
-        <text x="31.2945" y="45.3543">`</text>
-        <text x="31.2945" y="15.1181">È</text>
-        <text x="52.1575" y="45.3543">⟦</text>
-        <text x="52.1575" y="15.1181">⟨</text>
+        <a href="https://www.fileformat.info/info/unicode/char/e8/">
+            <text x="7.8236" y="45.3543">è</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/37/">
+            <text x="7.8236" y="15.1181">7</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/60/">
+            <text x="23.4709" y="45.3543">`</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/c8/">
+            <text x="23.4709" y="15.1181">È</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/27e6/">
+            <text x="39.1181" y="45.3543">⟦</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/27e8/">
+            <text x="39.1181" y="15.1181">⟨</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/22c3/">
+            <text x="54.7654" y="45.3543">⋃</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/22c2/">
+            <text x="54.7654" y="15.1181">⋂</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AE08" rx="10" width="62.589" x="563.3008" y="71.0551"/>
     <g transform="translate(563.3008, 71.0551)">
-        <text x="10.4315" y="45.3543">_</text>
-        <text x="10.4315" y="15.1181">8</text>
-        <text x="31.2945" y="45.3543">\</text>
-        <text x="31.2945" y="15.1181">™</text>
-        <text x="52.1575" y="45.3543">⟧</text>
-        <text x="52.1575" y="15.1181">⟩</text>
+        <a href="https://www.fileformat.info/info/unicode/char/5f/">
+            <text x="7.8236" y="45.3543">_</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/38/">
+            <text x="7.8236" y="15.1181">8</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/5c/">
+            <text x="23.4709" y="45.3543">\</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2122/">
+            <text x="23.4709" y="15.1181">™</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/27e7/">
+            <text x="39.1181" y="45.3543">⟧</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/27e9/">
+            <text x="39.1181" y="15.1181">⟩</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/222a/">
+            <text x="54.7654" y="45.3543">∪</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2229/">
+            <text x="54.7654" y="15.1181">∩</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AE09" rx="10" width="62.589" x="633.7134" y="71.0551"/>
     <g transform="translate(633.7134, 71.0551)">
-        <text x="15.6473" y="45.3543">ç</text>
-        <text x="15.6473" y="15.1181">9</text>
-        <text x="46.9418" y="45.3543">^</text>
-        <text x="46.9418" y="15.1181">Ç</text>
+        <a href="https://www.fileformat.info/info/unicode/char/e7/">
+            <text x="7.8236" y="45.3543">ç</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/39/">
+            <text x="7.8236" y="15.1181">9</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/5e/">
+            <text x="23.4709" y="45.3543">^</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/c7/">
+            <text x="23.4709" y="15.1181">Ç</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2208/">
+            <text x="39.1181" y="45.3543">∈</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2209/">
+            <text x="39.1181" y="15.1181">∉</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/220b/">
+            <text x="54.7654" y="45.3543">∋</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/220c/">
+            <text x="54.7654" y="15.1181">∌</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AE10" rx="10" width="62.589" x="704.126" y="71.0551"/>
     <g transform="translate(704.126, 71.0551)">
-        <text x="7.8236" y="45.3543">à</text>
-        <text x="7.8236" y="15.1181">0</text>
-        <text x="23.4709" y="45.3543">@</text>
-        <text x="23.4709" y="15.1181">À</text>
-        <text x="39.1181" y="45.3543">ⅹ</text>
-        <text x="39.1181" y="15.1181">Ⅹ</text>
-        <text x="54.7654" y="45.3543">ⅿ</text>
-        <text x="54.7654" y="15.1181">Ⅿ</text>
+        <a href="https://www.fileformat.info/info/unicode/char/e0/">
+            <text x="7.8236" y="45.3543">à</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/30/">
+            <text x="7.8236" y="15.1181">0</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/40/">
+            <text x="23.4709" y="45.3543">@</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/c0/">
+            <text x="23.4709" y="15.1181">À</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2179/">
+            <text x="39.1181" y="45.3543">ⅹ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2169/">
+            <text x="39.1181" y="15.1181">Ⅹ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/217f/">
+            <text x="54.7654" y="45.3543">ⅿ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/216f/">
+            <text x="54.7654" y="15.1181">Ⅿ</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AE11" rx="10" width="62.589" x="774.5386" y="71.0551"/>
     <a href="https://www.fileformat.info/info/unicode/char/b0/">
-        <text class="annotation ucp" style="" x="774.5386" y="66.0551">DEGREE SIGN</text>
+        <text class="annotation_top ucp" style="" x="782.3622" y="69.0551">DEGREE SIGN</text>
     </a>
     <g transform="translate(774.5386, 71.0551)">
-        <text x="15.6473" y="45.3543">)</text>
-        <text x="15.6473" y="15.1181">°</text>
-        <text x="46.9418" y="45.3543">]</text>
-        <text x="46.9418" y="15.1181">≠</text>
+        <a href="https://www.fileformat.info/info/unicode/char/29/">
+            <text x="7.8236" y="45.3543">)</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/b0/">
+            <text x="7.8236" y="15.1181">°</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/5d/">
+            <text x="23.4709" y="45.3543">]</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2260/">
+            <text x="23.4709" y="15.1181">≠</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2248/">
+            <text x="39.1181" y="45.3543">≈</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/221e/">
+            <text x="39.1181" y="15.1181">∞</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2a7b/">
+            <text x="54.7654" y="45.3543">⩻</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2a7c/">
+            <text x="54.7654" y="15.1181">⩼</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AE12" rx="10" width="62.589" x="844.9512" y="71.0551"/>
     <g transform="translate(844.9512, 71.0551)">
-        <text x="7.8236" y="45.3543">=</text>
-        <text x="7.8236" y="15.1181">+</text>
-        <text x="23.4709" y="45.3543">}</text>
-        <text x="23.4709" y="15.1181">±</text>
-        <text x="39.1181" y="45.3543">≟</text>
-        <text x="39.1181" y="15.1181">∓</text>
-        <text x="54.7654" y="45.3543"/>
-        <text x="54.7654" y="15.1181">∫</text>
+        <a href="https://www.fileformat.info/info/unicode/char/3d/">
+            <text x="7.8236" y="45.3543">=</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2b/">
+            <text x="7.8236" y="15.1181">+</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/7d/">
+            <text x="23.4709" y="45.3543">}</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/b1/">
+            <text x="23.4709" y="15.1181">±</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/225f/">
+            <text x="39.1181" y="45.3543">≟</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2213/">
+            <text x="39.1181" y="15.1181">∓</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2211/">
+            <text x="54.7654" y="45.3543">∑</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/222b/">
+            <text x="54.7654" y="15.1181">∫</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="BKSP" rx="10" width="133.0016" x="915.3638" y="71.0551"/>
     <g transform="translate(915.3638, 71.0551)">
-        <text x="33.2504" y="30.2362">⌫</text>
-        <text x="99.7512" y="30.2362">⌫</text>
+        <a href="https://www.fileformat.info/info/unicode/char/8/">
+            <text x="33.2504" y="30.2362">⌫</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/8/">
+            <text x="99.7512" y="30.2362">⌫</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="INS" rx="10" width="62.589" x="1056.189" y="71.0551"/>
     <g transform="translate(1056.189, 71.0551)">
-        <text x="15.6472" y="30.2362">⇱</text>
-        <text x="46.9417" y="30.2362">⇱</text>
+        <text x="31.2945" y="30.2362">⇱</text>
     </g>
     <rect height="60.4724" kdd:x-key-name="TAB" rx="10" width="97.7953" x="0" y="142.1102"/>
     <g transform="translate(0, 142.1102)">
-        <text x="24.4488" y="30.2362">⇥</text>
+        <a href="https://www.fileformat.info/info/unicode/char/9/">
+            <text x="24.4488" y="30.2362">⇥</text>
+        </a>
         <text x="73.3465" y="30.2362">⇤</text>
     </g>
     <rect height="60.4724" kdd:x-key-name="AD01" rx="10" width="62.589" x="105.6189" y="142.1102"/>
     <g transform="translate(105.6189, 142.1102)">
-        <text x="10.4315" y="45.3543">a</text>
-        <text x="10.4315" y="15.1181">A</text>
-        <text x="31.2945" y="45.3543">æ</text>
-        <text x="31.2945" y="15.1181">Æ</text>
-        <text x="52.1575" y="45.3543">α</text>
-        <text x="52.1575" y="15.1181">Α</text>
+        <a href="https://www.fileformat.info/info/unicode/char/61/">
+            <text x="7.8236" y="45.3543">a</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/41/">
+            <text x="7.8236" y="15.1181">A</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/e6/">
+            <text x="23.4709" y="45.3543">æ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/c6/">
+            <text x="23.4709" y="15.1181">Æ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3b1/">
+            <text x="39.1181" y="45.3543">α</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/391/">
+            <text x="39.1181" y="15.1181">Α</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2200/">
+            <text x="54.7654" y="45.3543">∀</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AD02" rx="10" width="62.589" x="176.0315" y="142.1102"/>
     <g transform="translate(176.0315, 142.1102)">
-        <text x="10.4315" y="45.3543">z</text>
-        <text x="10.4315" y="15.1181">Z</text>
-        <text x="31.2945" y="45.3543">â</text>
-        <text x="31.2945" y="15.1181">Â</text>
-        <text x="52.1575" y="45.3543">ζ</text>
-        <text x="52.1575" y="15.1181">Ζ</text>
+        <a href="https://www.fileformat.info/info/unicode/char/7a/">
+            <text x="7.8236" y="45.3543">z</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/5a/">
+            <text x="7.8236" y="15.1181">Z</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/e2/">
+            <text x="23.4709" y="45.3543">â</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/c2/">
+            <text x="23.4709" y="15.1181">Â</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3b6/">
+            <text x="39.1181" y="45.3543">ζ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/396/">
+            <text x="39.1181" y="15.1181">Ζ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/226a/">
+            <text x="54.7654" y="45.3543">≪</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/226b/">
+            <text x="54.7654" y="15.1181">≫</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AD03" rx="10" width="62.589" x="246.4441" y="142.1102"/>
     <a href="https://www.fileformat.info/info/unicode/char/a2/">
-        <text class="annotation ucp" style="" x="266.4441" y="137.1102">CENT SIGN</text>
+        <text class="annotation_top ucp" style="" x="269.915" y="140.1102">CENT SIGN</text>
     </a>
     <g transform="translate(246.4441, 142.1102)">
-        <text x="10.4315" y="45.3543">e</text>
-        <text x="10.4315" y="15.1181">E</text>
-        <text x="31.2945" y="45.3543">€</text>
-        <text x="31.2945" y="15.1181">¢</text>
-        <text x="52.1575" y="45.3543">ε</text>
-        <text x="52.1575" y="15.1181">Ε</text>
+        <a href="https://www.fileformat.info/info/unicode/char/65/">
+            <text x="7.8236" y="45.3543">e</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/45/">
+            <text x="7.8236" y="15.1181">E</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/20ac/">
+            <text x="23.4709" y="45.3543">€</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/a2/">
+            <text x="23.4709" y="15.1181">¢</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3b5/">
+            <text x="39.1181" y="45.3543">ε</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/395/">
+            <text x="39.1181" y="15.1181">Ε</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2203/">
+            <text x="54.7654" y="45.3543">∃</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2204/">
+            <text x="54.7654" y="15.1181">∄</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AD04" rx="10" width="62.589" x="316.8567" y="142.1102"/>
     <g transform="translate(316.8567, 142.1102)">
-        <text x="7.8236" y="45.3543">r</text>
-        <text x="7.8236" y="15.1181">R</text>
-        <text x="23.4709" y="45.3543">ê</text>
-        <text x="23.4709" y="15.1181">Ê</text>
-        <text x="39.1181" y="45.3543">ρ</text>
-        <text x="39.1181" y="15.1181">Ρ</text>
-        <text x="54.7654" y="45.3543">ℝ</text>
+        <a href="https://www.fileformat.info/info/unicode/char/72/">
+            <text x="7.8236" y="45.3543">r</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/52/">
+            <text x="7.8236" y="15.1181">R</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/ea/">
+            <text x="23.4709" y="45.3543">ê</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/ca/">
+            <text x="23.4709" y="15.1181">Ê</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3c1/">
+            <text x="39.1181" y="45.3543">ρ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3a1/">
+            <text x="39.1181" y="15.1181">Ρ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/211d/">
+            <text x="54.7654" y="45.3543">ℝ</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AD05" rx="10" width="62.589" x="387.2693" y="142.1102"/>
     <a href="https://www.fileformat.info/info/unicode/char/fe/">
-        <text class="annotation ucp" style="" x="397.2693" y="207.5826">LATIN SMALL LETTER THORN</text>
-    </a>
-    <a href="https://www.fileformat.info/info/unicode/char/de/">
-        <text class="annotation ucp" style="" x="347.2693" y="137.1102">LATIN CAPITAL LETTER THORN</text>
+        <text class="annotation_top ucp" style="" x="418.5638" y="175.3464">LATIN SMALL LETTER THORN</text>
     </a>
     <g transform="translate(387.2693, 142.1102)">
-        <text x="10.4315" y="45.3543">t</text>
-        <text x="10.4315" y="15.1181">T</text>
-        <text x="31.2945" y="45.3543">þ</text>
-        <text x="31.2945" y="15.1181">Þ</text>
-        <text x="52.1575" y="45.3543">τ</text>
-        <text x="52.1575" y="15.1181">Τ</text>
+        <a href="https://www.fileformat.info/info/unicode/char/74/">
+            <text x="10.4315" y="45.3543">t</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/54/">
+            <text x="10.4315" y="15.1181">T</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/fe/">
+            <text x="31.2945" y="45.3543">þ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/de/">
+            <text x="31.2945" y="15.1181">Þ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3c4/">
+            <text x="52.1575" y="45.3543">τ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3a4/">
+            <text x="52.1575" y="15.1181">Τ</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AD06" rx="10" width="62.589" x="457.6819" y="142.1102"/>
     <g transform="translate(457.6819, 142.1102)">
-        <text x="10.4315" y="45.3543">y</text>
-        <text x="10.4315" y="15.1181">Y</text>
-        <text x="31.2945" y="45.3543">ÿ</text>
-        <text x="31.2945" y="15.1181">Ÿ</text>
-        <text x="52.1575" y="45.3543">ψ</text>
-        <text x="52.1575" y="15.1181">Ψ</text>
+        <a href="https://www.fileformat.info/info/unicode/char/79/">
+            <text x="10.4315" y="45.3543">y</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/59/">
+            <text x="10.4315" y="15.1181">Y</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/ff/">
+            <text x="31.2945" y="45.3543">ÿ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/178/">
+            <text x="31.2945" y="15.1181">Ÿ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3c8/">
+            <text x="52.1575" y="45.3543">ψ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3a8/">
+            <text x="52.1575" y="15.1181">Ψ</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AD07" rx="10" width="62.589" x="528.0945" y="142.1102"/>
     <g transform="translate(528.0945, 142.1102)">
-        <text x="10.4315" y="45.3543">u</text>
-        <text x="10.4315" y="15.1181">U</text>
-        <text x="31.2945" y="45.3543">û</text>
-        <text x="31.2945" y="15.1181">Û</text>
-        <text x="52.1575" y="45.3543">υ</text>
-        <text x="52.1575" y="15.1181">Υ</text>
+        <a href="https://www.fileformat.info/info/unicode/char/75/">
+            <text x="10.4315" y="45.3543">u</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/55/">
+            <text x="10.4315" y="15.1181">U</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/fb/">
+            <text x="31.2945" y="45.3543">û</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/db/">
+            <text x="31.2945" y="15.1181">Û</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3c5/">
+            <text x="52.1575" y="45.3543">υ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3a5/">
+            <text x="52.1575" y="15.1181">Υ</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AD08" rx="10" width="62.589" x="598.5071" y="142.1102"/>
     <g transform="translate(598.5071, 142.1102)">
-        <text x="10.4315" y="45.3543">i</text>
-        <text x="10.4315" y="15.1181">I</text>
-        <text x="31.2945" y="45.3543">î</text>
-        <text x="31.2945" y="15.1181">Î</text>
-        <text x="52.1575" y="45.3543">ι</text>
-        <text x="52.1575" y="15.1181">Ι</text>
+        <a href="https://www.fileformat.info/info/unicode/char/69/">
+            <text x="10.4315" y="45.3543">i</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/49/">
+            <text x="10.4315" y="15.1181">I</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/ee/">
+            <text x="31.2945" y="45.3543">î</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/ce/">
+            <text x="31.2945" y="15.1181">Î</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3b9/">
+            <text x="52.1575" y="45.3543">ι</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/399/">
+            <text x="52.1575" y="15.1181">Ι</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AD09" rx="10" width="62.589" x="668.9197" y="142.1102"/>
     <g transform="translate(668.9197, 142.1102)">
-        <text x="10.4315" y="45.3543">o</text>
-        <text x="10.4315" y="15.1181">O</text>
-        <text x="31.2945" y="45.3543">œ</text>
-        <text x="31.2945" y="15.1181">Œ</text>
-        <text x="52.1575" y="45.3543">ο</text>
-        <text x="52.1575" y="15.1181">Ο</text>
+        <a href="https://www.fileformat.info/info/unicode/char/6f/">
+            <text x="7.8236" y="45.3543">o</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/4f/">
+            <text x="7.8236" y="15.1181">O</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/153/">
+            <text x="23.4709" y="45.3543">œ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/152/">
+            <text x="23.4709" y="15.1181">Œ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3bf/">
+            <text x="39.1181" y="45.3543">ο</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/39f/">
+            <text x="39.1181" y="15.1181">Ο</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2205/">
+            <text x="54.7654" y="45.3543">∅</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AD10" rx="10" width="62.589" x="739.3323" y="142.1102"/>
     <g transform="translate(739.3323, 142.1102)">
-        <text x="7.8236" y="45.3543">p</text>
-        <text x="7.8236" y="15.1181">P</text>
-        <text x="23.4709" y="45.3543">ô</text>
-        <text x="23.4709" y="15.1181">Ô</text>
-        <text x="39.1181" y="45.3543">π</text>
-        <text x="39.1181" y="15.1181">Π</text>
-        <text x="54.7654" y="45.3543">ℙ</text>
-        <text x="54.7654" y="15.1181">℘</text>
+        <a href="https://www.fileformat.info/info/unicode/char/70/">
+            <text x="7.8236" y="45.3543">p</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/50/">
+            <text x="7.8236" y="15.1181">P</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/f4/">
+            <text x="23.4709" y="45.3543">ô</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/d4/">
+            <text x="23.4709" y="15.1181">Ô</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3c0/">
+            <text x="39.1181" y="45.3543">π</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3a0/">
+            <text x="39.1181" y="15.1181">Π</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2119/">
+            <text x="54.7654" y="45.3543">ℙ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2118/">
+            <text x="54.7654" y="15.1181">℘</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AD11" rx="10" width="62.589" x="809.7449" y="142.1102"/>
-    <text class="annotation" style="" x="829.7449" y="207.5826">dead_tilde</text>
-    <text class="annotation" style="" x="844.7449" y="137.1102">dead_abovering</text>
-    <text class="annotation" style="" x="774.7449" y="137.1102">dead_diaeresis</text>
+    <text class="annotation_bottom" style="" x="833.2158" y="206.5826">dead_tilde</text>
+    <text class="annotation_bottom" style="" x="833.2158" y="170.3464">dead_abovering</text>
+    <text class="annotation_top" style="" x="817.5685" y="140.1102">dead_diaeresis</text>
     <g transform="translate(809.7449, 142.1102)">
-        <text x="10.4315" y="45.3543">^</text>
-        <text x="10.4315" y="15.1181">̈</text>
-        <text x="31.2945" y="45.3543">̃</text>
-        <text x="31.2945" y="15.1181">˚</text>
-        <text x="52.1575" y="45.3543">^</text>
-        <text x="52.1575" y="15.1181">√</text>
+        <text x="7.8236" y="45.3543">^</text>
+        <text x="7.8236" y="15.1181">̈</text>
+        <text x="23.4709" y="45.3543">̃</text>
+        <text x="23.4709" y="15.1181">˚</text>
+        <a href="https://www.fileformat.info/info/unicode/char/22a2/">
+            <text x="39.1181" y="45.3543">⊢</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/22a8/">
+            <text x="39.1181" y="15.1181">⊨</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/22a5/">
+            <text x="54.7654" y="45.3543">⊥</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/22a4/">
+            <text x="54.7654" y="15.1181">⊤</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AD12" rx="10" width="62.589" x="880.1575" y="142.1102"/>
-    <a href="https://www.fileformat.info/info/unicode/char/f8/">
-        <text class="annotation ucp" style="font-size: 25%;" x="882.1575" y="175.3464">LATIN SMALL LETTER O WITH STROKE</text>
-    </a>
     <a href="https://www.fileformat.info/info/unicode/char/d8/">
-        <text class="annotation ucp" style="" x="925.1575" y="137.1102">LATIN CAPITAL LETTER O WITH STROKE</text>
+        <text class="annotation_top ucp" style="" x="903.6284" y="140.1102">LATIN CAPITAL LETTER O WITH STROKE</text>
     </a>
     <g transform="translate(880.1575, 142.1102)">
-        <text x="15.6472" y="45.3543">$</text>
-        <text x="15.6472" y="15.1181">£</text>
-        <text x="46.9417" y="45.3543">ø</text>
-        <text x="46.9417" y="15.1181">Ø</text>
+        <a href="https://www.fileformat.info/info/unicode/char/24/">
+            <text x="7.8236" y="45.3543">$</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/a3/">
+            <text x="7.8236" y="15.1181">£</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/f8/">
+            <text x="23.4709" y="45.3543">ø</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/d8/">
+            <text x="23.4709" y="15.1181">Ø</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/22ac/">
+            <text x="39.1181" y="45.3543">⊬</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/22ad/">
+            <text x="39.1181" y="15.1181">⊭</text>
+        </a>
+        <text x="54.7654" y="45.3543"/>
+        <a href="https://www.fileformat.info/info/unicode/char/2295/">
+            <text x="54.7654" y="15.1181">⊕</text>
+        </a>
     </g>
     <rect height="132.01" kdd:x-key-name="RTRN" rx="10" style="stroke: white" width="80.19" x="968.1701" y="142.1102"/>
     <g transform="translate(968.1701, 142.1102)">
-        <text x="40.095" y="66.005">⏎</text>
+        <a href="https://www.fileformat.info/info/unicode/char/d/">
+            <text x="40.095" y="66.005">⏎</text>
+        </a>
     </g>
     <path d="M950.5700787401573 142.11023622047244 m0 10 a10 10 0 0 1 10 -10 h77.8 a10 10 0 0 1 10 10 v111.24 a10 10 0 0 1 -10 10 h-60.19 a10 10 0 0 1 -10 -10 v-56.07 a5 5 0 0 0 -5 -5 h-2.8 a10 10 0 0 1 -10 -10 Z"/>
     <rect height="60.4724" kdd:x-key-name="END" rx="10" width="62.589" x="1056.189" y="142.1102"/>
@@ -394,129 +786,312 @@ font-size: 16px;
     </g>
     <rect height="60.4724" kdd:x-key-name="AC01" rx="10" width="62.589" x="123.2220" y="213.1654"/>
     <g transform="translate(123.222, 213.1654)">
-        <text x="7.8236" y="45.3543">q</text>
-        <text x="7.8236" y="15.1181">Q</text>
-        <text x="23.4709" y="45.3543">ä</text>
-        <text x="23.4709" y="15.1181">Ä</text>
-        <text x="39.1181" y="45.3543">θ</text>
-        <text x="39.1181" y="15.1181">Θ</text>
-        <text x="54.7654" y="45.3543">ℚ</text>
+        <a href="https://www.fileformat.info/info/unicode/char/71/">
+            <text x="7.8236" y="45.3543">q</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/51/">
+            <text x="7.8236" y="15.1181">Q</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/e4/">
+            <text x="23.4709" y="45.3543">ä</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/c4/">
+            <text x="23.4709" y="15.1181">Ä</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3b8/">
+            <text x="39.1181" y="45.3543">θ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/398/">
+            <text x="39.1181" y="15.1181">Θ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/211a/">
+            <text x="54.7654" y="45.3543">ℚ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/22c8/">
+            <text x="54.7654" y="15.1181">⋈</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AC02" rx="10" width="62.589" x="193.6346" y="213.1654"/>
     <a href="https://www.fileformat.info/info/unicode/char/201e/">
-        <text class="annotation ucp" style="" x="183.6346" y="208.1654">DOUBLE LOW-9 QUOTATION MARK</text>
+        <text class="annotation_top ucp" style="" x="217.1055" y="211.1654">DOUBLE LOW-9 QUOTATION MARK</text>
     </a>
     <g transform="translate(193.6346, 213.1654)">
-        <text x="7.8236" y="45.3543">s</text>
-        <text x="7.8236" y="15.1181">S</text>
-        <text x="23.4709" y="45.3543">ß</text>
-        <text x="23.4709" y="15.1181">„</text>
-        <text x="39.1181" y="45.3543">σ</text>
-        <text x="39.1181" y="15.1181">Σ</text>
-        <text x="54.7654" y="45.3543">ς</text>
-        <text x="54.7654" y="15.1181">∑</text>
+        <a href="https://www.fileformat.info/info/unicode/char/73/">
+            <text x="7.8236" y="45.3543">s</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/53/">
+            <text x="7.8236" y="15.1181">S</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/df/">
+            <text x="23.4709" y="45.3543">ß</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/201e/">
+            <text x="23.4709" y="15.1181">„</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3c3/">
+            <text x="39.1181" y="45.3543">σ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3a3/">
+            <text x="39.1181" y="15.1181">Σ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3c2/">
+            <text x="54.7654" y="45.3543">ς</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AC03" rx="10" width="62.589" x="264.0472" y="213.1654"/>
     <g transform="translate(264.0472, 213.1654)">
-        <text x="10.4315" y="45.3543">d</text>
-        <text x="10.4315" y="15.1181">D</text>
-        <text x="31.2945" y="45.3543">ë</text>
-        <text x="31.2945" y="15.1181">Ë</text>
-        <text x="52.1575" y="45.3543">δ</text>
-        <text x="52.1575" y="15.1181">Δ</text>
+        <a href="https://www.fileformat.info/info/unicode/char/64/">
+            <text x="10.4315" y="45.3543">d</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/44/">
+            <text x="10.4315" y="15.1181">D</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/eb/">
+            <text x="31.2945" y="45.3543">ë</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/cb/">
+            <text x="31.2945" y="15.1181">Ë</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3b4/">
+            <text x="52.1575" y="45.3543">δ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/394/">
+            <text x="52.1575" y="15.1181">Δ</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AC04" rx="10" width="62.589" x="334.4595" y="213.1654"/>
     <a href="https://www.fileformat.info/info/unicode/char/2018/">
-        <text class="annotation ucp" style="" x="294.4595" y="278.6378">LEFT SINGLE QUOTATION MARK</text>
+        <text class="annotation_bottom ucp" style="" x="365.754" y="277.6378">LEFT SINGLE QUOTATION MARK</text>
     </a>
     <a href="https://www.fileformat.info/info/unicode/char/201a/">
-        <text class="annotation ucp" style="" x="294.4595" y="208.1654">SINGLE LOW-9 QUOTATION MARK</text>
+        <text class="annotation_top ucp" style="" x="365.754" y="211.1654">SINGLE LOW-9 QUOTATION MARK</text>
     </a>
     <g transform="translate(334.4595, 213.1654)">
-        <text x="10.4315" y="45.3543">f</text>
-        <text x="10.4315" y="15.1181">F</text>
-        <text x="31.2945" y="45.3543">‘</text>
-        <text x="31.2945" y="15.1181">‚</text>
-        <text x="52.1575" y="45.3543">φ</text>
-        <text x="52.1575" y="15.1181">Φ</text>
+        <a href="https://www.fileformat.info/info/unicode/char/66/">
+            <text x="10.4315" y="45.3543">f</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/46/">
+            <text x="10.4315" y="15.1181">F</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2018/">
+            <text x="31.2945" y="45.3543">‘</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/201a/">
+            <text x="31.2945" y="15.1181">‚</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3c6/">
+            <text x="52.1575" y="45.3543">φ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3a6/">
+            <text x="52.1575" y="15.1181">Φ</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AC05" rx="10" width="62.589" x="404.8724" y="213.1654"/>
-    <a href="https://www.fileformat.info/info/unicode/char/2019/">
-        <text class="annotation ucp" style="" x="394.8724" y="278.6378">RIGHT SINGLE QUOTATION MARK</text>
-    </a>
     <g transform="translate(404.8724, 213.1654)">
-        <text x="10.4315" y="45.3543">g</text>
-        <text x="10.4315" y="15.1181">G</text>
-        <text x="31.2945" y="45.3543">’</text>
-        <text x="31.2945" y="15.1181">¥</text>
-        <text x="52.1575" y="45.3543">γ</text>
-        <text x="52.1575" y="15.1181">Σ</text>
+        <a href="https://www.fileformat.info/info/unicode/char/67/">
+            <text x="7.8236" y="45.3543">g</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/47/">
+            <text x="7.8236" y="15.1181">G</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2019/">
+            <text x="23.4709" y="45.3543">’</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/a5/">
+            <text x="23.4709" y="15.1181">¥</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3b3/">
+            <text x="39.1181" y="45.3543">γ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3a3/">
+            <text x="39.1181" y="15.1181">Σ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2195/">
+            <text x="54.7654" y="45.3543">↕</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/21d5/">
+            <text x="54.7654" y="15.1181">⇕</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AC06" rx="10" width="62.589" x="475.2850" y="213.1654"/>
     <g transform="translate(475.285, 213.1654)">
-        <text x="10.4315" y="45.3543">h</text>
-        <text x="10.4315" y="15.1181">H</text>
-        <text x="31.2945" y="45.3543">ð</text>
-        <text x="31.2945" y="15.1181">Ð</text>
-        <text x="52.1575" y="45.3543">η</text>
-        <text x="52.1575" y="15.1181">Η</text>
+        <a href="https://www.fileformat.info/info/unicode/char/68/">
+            <text x="7.8236" y="45.3543">h</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/48/">
+            <text x="7.8236" y="15.1181">H</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/f0/">
+            <text x="23.4709" y="45.3543">ð</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/d0/">
+            <text x="23.4709" y="15.1181">Ð</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3b7/">
+            <text x="39.1181" y="45.3543">η</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/397/">
+            <text x="39.1181" y="15.1181">Η</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2194/">
+            <text x="54.7654" y="45.3543">↔</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/21d4/">
+            <text x="54.7654" y="15.1181">⇔</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AC07" rx="10" width="62.589" x="545.6976" y="213.1654"/>
     <g transform="translate(545.6976, 213.1654)">
-        <text x="10.4315" y="45.3543">j</text>
-        <text x="10.4315" y="15.1181">J</text>
-        <text x="31.2945" y="45.3543">ü</text>
-        <text x="31.2945" y="15.1181">Ü</text>
-        <text x="52.1575" y="45.3543">ϲ</text>
-        <text x="52.1575" y="15.1181">Ϲ</text>
+        <a href="https://www.fileformat.info/info/unicode/char/6a/">
+            <text x="7.8236" y="45.3543">j</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/4a/">
+            <text x="7.8236" y="15.1181">J</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/fc/">
+            <text x="23.4709" y="45.3543">ü</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/dc/">
+            <text x="23.4709" y="15.1181">Ü</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3f2/">
+            <text x="39.1181" y="45.3543">ϲ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3f9/">
+            <text x="39.1181" y="15.1181">Ϲ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2228/">
+            <text x="54.7654" y="45.3543">∨</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2227/">
+            <text x="54.7654" y="15.1181">∧</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AC08" rx="10" width="62.589" x="616.1102" y="213.1654"/>
     <g transform="translate(616.1102, 213.1654)">
-        <text x="10.4315" y="45.3543">k</text>
-        <text x="10.4315" y="15.1181">K</text>
-        <text x="31.2945" y="45.3543">ï</text>
-        <text x="31.2945" y="15.1181">Ï</text>
-        <text x="52.1575" y="45.3543">κ</text>
-        <text x="52.1575" y="15.1181">Κ</text>
+        <a href="https://www.fileformat.info/info/unicode/char/6b/">
+            <text x="7.8236" y="45.3543">k</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/4b/">
+            <text x="7.8236" y="15.1181">K</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/ef/">
+            <text x="23.4709" y="45.3543">ï</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/cf/">
+            <text x="23.4709" y="15.1181">Ï</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3ba/">
+            <text x="39.1181" y="45.3543">κ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/39a/">
+            <text x="39.1181" y="15.1181">Κ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/22c1/">
+            <text x="54.7654" y="45.3543">⋁</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/22c0/">
+            <text x="54.7654" y="15.1181">⋀</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AC09" rx="10" width="62.589" x="686.5228" y="213.1654"/>
     <g transform="translate(686.5228, 213.1654)">
-        <text x="10.4315" y="45.3543">l</text>
-        <text x="10.4315" y="15.1181">L</text>
-        <text x="31.2945" y="45.3543">ŀ</text>
-        <text x="31.2945" y="15.1181">Ŀ</text>
-        <text x="52.1575" y="45.3543">λ</text>
-        <text x="52.1575" y="15.1181">Λ</text>
+        <a href="https://www.fileformat.info/info/unicode/char/6c/">
+            <text x="7.8236" y="45.3543">l</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/4c/">
+            <text x="7.8236" y="15.1181">L</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/140/">
+            <text x="23.4709" y="45.3543">ŀ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/13f/">
+            <text x="23.4709" y="15.1181">Ŀ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3bb/">
+            <text x="39.1181" y="45.3543">λ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/39b/">
+            <text x="39.1181" y="15.1181">Λ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2297/">
+            <text x="54.7654" y="45.3543">⊗</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2298/">
+            <text x="54.7654" y="15.1181">⊘</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AC10" rx="10" width="62.589" x="756.9354" y="213.1654"/>
     <g transform="translate(756.9354, 213.1654)">
-        <text x="10.4315" y="45.3543">m</text>
-        <text x="10.4315" y="15.1181">M</text>
-        <text x="31.2945" y="45.3543">ö</text>
-        <text x="31.2945" y="15.1181">Ö</text>
-        <text x="52.1575" y="45.3543">μ</text>
-        <text x="52.1575" y="15.1181">Μ</text>
+        <a href="https://www.fileformat.info/info/unicode/char/6d/">
+            <text x="7.8236" y="45.3543">m</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/4d/">
+            <text x="7.8236" y="15.1181">M</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/f6/">
+            <text x="23.4709" y="45.3543">ö</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/d6/">
+            <text x="23.4709" y="15.1181">Ö</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3bc/">
+            <text x="39.1181" y="45.3543">μ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/39c/">
+            <text x="39.1181" y="15.1181">Μ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2202/">
+            <text x="54.7654" y="45.3543">∂</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2207/">
+            <text x="54.7654" y="15.1181">∇</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AC11" rx="10" width="62.589" x="827.3480" y="213.1654"/>
-    <text class="annotation" style="" x="867.348" y="278.6378">dead_acute</text>
+    <text class="annotation_bottom" style="" x="850.8189" y="277.6378">dead_acute</text>
     <g transform="translate(827.348, 213.1654)">
-        <text x="10.4315" y="45.3543">ù</text>
-        <text x="10.4315" y="15.1181">%</text>
-        <text x="31.2945" y="45.3543">´</text>
-        <text x="31.2945" y="15.1181">Ù</text>
-        <text x="52.1575" y="45.3543"/>
-        <text x="52.1575" y="15.1181">‰</text>
+        <a href="https://www.fileformat.info/info/unicode/char/f9/">
+            <text x="7.8236" y="45.3543">ù</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/25/">
+            <text x="7.8236" y="15.1181">%</text>
+        </a>
+        <text x="23.4709" y="45.3543">´</text>
+        <a href="https://www.fileformat.info/info/unicode/char/d9/">
+            <text x="23.4709" y="15.1181">Ù</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2296/">
+            <text x="39.1181" y="45.3543">⊖</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2030/">
+            <text x="39.1181" y="15.1181">‰</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2288/">
+            <text x="54.7654" y="45.3543">⊈</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2289/">
+            <text x="54.7654" y="15.1181">⊉</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="BKSL" rx="10" width="62.589" x="897.7606" y="213.1654"/>
-    <text class="annotation" style="" x="937.7606" y="278.6378">dead_grave</text>
-    <text class="annotation" style="" x="902.7606" y="208.1654">dead_macron</text>
+    <text class="annotation_bottom" style="" x="929.0551" y="277.6378">dead_grave</text>
+    <text class="annotation_top" style="" x="929.0551" y="211.1654">dead_macron</text>
     <g transform="translate(897.7606, 213.1654)">
-        <text x="10.4315" y="45.3543">*</text>
-        <text x="10.4315" y="15.1181">µ</text>
+        <a href="https://www.fileformat.info/info/unicode/char/2a/">
+            <text x="10.4315" y="45.3543">*</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/b5/">
+            <text x="10.4315" y="15.1181">µ</text>
+        </a>
         <text x="31.2945" y="45.3543">̀</text>
         <text x="31.2945" y="15.1181">̄</text>
-        <text x="52.1575" y="45.3543">§</text>
-        <text x="52.1575" y="15.1181">¶</text>
+        <a href="https://www.fileformat.info/info/unicode/char/220e/">
+            <text x="52.1575" y="45.3543">∎</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/b6/">
+            <text x="52.1575" y="15.1181">¶</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="PGUP" rx="10" width="62.589" x="1056.189" y="213.1654"/>
     <g transform="translate(1056.189, 213.1654)">
@@ -528,131 +1103,336 @@ font-size: 16px;
     </g>
     <rect height="60.4724" kdd:x-key-name="LSGT" rx="10" width="62.589" x="70.4126" y="284.2205"/>
     <g transform="translate(70.4126, 284.2205)">
-        <text x="15.6472" y="45.3543">&lt;</text>
-        <text x="15.6472" y="15.1181">&gt;</text>
-        <text x="46.9417" y="45.3543">≤</text>
-        <text x="46.9417" y="15.1181">≥</text>
+        <a href="https://www.fileformat.info/info/unicode/char/3c/">
+            <text x="7.8236" y="45.3543">&lt;</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3e/">
+            <text x="7.8236" y="15.1181">&gt;</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2264/">
+            <text x="23.4709" y="45.3543">≤</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2265/">
+            <text x="23.4709" y="15.1181">≥</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/227a/">
+            <text x="39.1181" y="45.3543">≺</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/227b/">
+            <text x="39.1181" y="15.1181">≻</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/227c/">
+            <text x="54.7654" y="45.3543">≼</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/227d/">
+            <text x="54.7654" y="15.1181">≽</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AB01" rx="10" width="62.589" x="140.8252" y="284.2205"/>
     <a href="https://www.fileformat.info/info/unicode/char/ab/">
-        <text class="annotation ucp" style="" x="50.8252" y="349.6929">LEFT-POINTING DOUBLE ANGLE QUOTATION MARK</text>
+        <text class="annotation_bottom ucp" style="" x="164.2961" y="348.6929">LEFT-POINTING DOUBLE ANGLE QUOTATION MARK</text>
     </a>
     <a href="https://www.fileformat.info/info/unicode/char/201c/">
-        <text class="annotation ucp" style="" x="95.8252" y="279.2205">LEFT DOUBLE QUOTATION MARK</text>
+        <text class="annotation_top ucp" style="" x="164.2961" y="282.2205">LEFT DOUBLE QUOTATION MARK</text>
     </a>
     <g transform="translate(140.8252, 284.2205)">
-        <text x="10.4315" y="45.3543">w</text>
-        <text x="10.4315" y="15.1181">W</text>
-        <text x="31.2945" y="45.3543">«</text>
-        <text x="31.2945" y="15.1181">“</text>
-        <text x="52.1575" y="45.3543">ω</text>
-        <text x="52.1575" y="15.1181">Ω</text>
+        <a href="https://www.fileformat.info/info/unicode/char/77/">
+            <text x="7.8236" y="45.3543">w</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/57/">
+            <text x="7.8236" y="15.1181">W</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/ab/">
+            <text x="23.4709" y="45.3543">«</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/201c/">
+            <text x="23.4709" y="15.1181">“</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3c9/">
+            <text x="39.1181" y="45.3543">ω</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3a9/">
+            <text x="39.1181" y="15.1181">Ω</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2280/">
+            <text x="54.7654" y="45.3543">⊀</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2281/">
+            <text x="54.7654" y="15.1181">⊁</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AB02" rx="10" width="62.589" x="211.2378" y="284.2205"/>
-    <a href="https://www.fileformat.info/info/unicode/char/bb/">
-        <text class="annotation ucp" style="" x="191.2378" y="349.6929">RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK</text>
-    </a>
-    <a href="https://www.fileformat.info/info/unicode/char/201d/">
-        <text class="annotation ucp" style="" x="196.2378" y="279.2205">RIGHT DOUBLE QUOTATION MARK</text>
-    </a>
     <g transform="translate(211.2378, 284.2205)">
-        <text x="10.4315" y="45.3543">x</text>
-        <text x="10.4315" y="15.1181">X</text>
-        <text x="31.2945" y="45.3543">»</text>
-        <text x="31.2945" y="15.1181">”</text>
-        <text x="52.1575" y="45.3543">χ</text>
-        <text x="52.1575" y="15.1181">Χ</text>
+        <a href="https://www.fileformat.info/info/unicode/char/78/">
+            <text x="7.8236" y="45.3543">x</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/58/">
+            <text x="7.8236" y="15.1181">X</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/bb/">
+            <text x="23.4709" y="45.3543">»</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/201d/">
+            <text x="23.4709" y="15.1181">”</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3c7/">
+            <text x="39.1181" y="45.3543">χ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3a7/">
+            <text x="39.1181" y="15.1181">Χ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/22e0/">
+            <text x="54.7654" y="45.3543">⋠</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/22e1/">
+            <text x="54.7654" y="15.1181">⋡</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AB03" rx="10" width="62.589" x="281.6504" y="284.2205"/>
     <g transform="translate(281.6504, 284.2205)">
-        <text x="7.8236" y="45.3543">c</text>
-        <text x="7.8236" y="15.1181">C</text>
-        <text x="23.4709" y="45.3543">©</text>
-        <text x="23.4709" y="15.1181">®</text>
-        <text x="39.1181" y="45.3543">ξ</text>
-        <text x="39.1181" y="15.1181">Ξ</text>
-        <text x="54.7654" y="45.3543">ℂ</text>
+        <a href="https://www.fileformat.info/info/unicode/char/63/">
+            <text x="7.8236" y="45.3543">c</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/43/">
+            <text x="7.8236" y="15.1181">C</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/a9/">
+            <text x="23.4709" y="45.3543">©</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/ae/">
+            <text x="23.4709" y="15.1181">®</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3be/">
+            <text x="39.1181" y="45.3543">ξ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/39e/">
+            <text x="39.1181" y="15.1181">Ξ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2102/">
+            <text x="54.7654" y="45.3543">ℂ</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AB04" rx="10" width="62.589" x="352.063" y="284.2205"/>
     <a href="https://www.fileformat.info/info/unicode/char/202f/">
-        <text class="annotation ucp" style="" x="342.063" y="349.6929">NARROW NO-BREAK SPACE</text>
+        <text class="annotation_bottom ucp" style="" x="375.5339" y="348.6929">NARROW NO-BREAK SPACE</text>
     </a>
     <g transform="translate(352.063, 284.2205)">
-        <text x="10.4315" y="45.3543">v</text>
-        <text x="10.4315" y="15.1181">V</text>
-        <text x="31.2945" y="45.3543">╫</text>
-        <text x="31.2945" y="15.1181">←</text>
-        <text x="52.1575" y="45.3543">ϝ</text>
-        <text x="52.1575" y="15.1181">Ϝ</text>
+        <a href="https://www.fileformat.info/info/unicode/char/76/">
+            <text x="7.8236" y="45.3543">v</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/56/">
+            <text x="7.8236" y="15.1181">V</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/202f/">
+            <text x="23.4709" y="45.3543">╫</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2190/">
+            <text x="23.4709" y="15.1181">←</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3dd/">
+            <text x="39.1181" y="45.3543">ϝ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3dc/">
+            <text x="39.1181" y="15.1181">Ϝ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/21cf/">
+            <text x="54.7654" y="45.3543">⇏</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/21d0/">
+            <text x="54.7654" y="15.1181">⇐</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AB05" rx="10" width="62.589" x="422.4756" y="284.2205"/>
     <g transform="translate(422.4756, 284.2205)">
-        <text x="10.4315" y="45.3543">b</text>
-        <text x="10.4315" y="15.1181">B</text>
-        <text x="31.2945" y="45.3543">↓</text>
-        <text x="31.2945" y="15.1181">↑</text>
-        <text x="52.1575" y="45.3543">β</text>
-        <text x="52.1575" y="15.1181">Β</text>
+        <a href="https://www.fileformat.info/info/unicode/char/62/">
+            <text x="7.8236" y="45.3543">b</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/42/">
+            <text x="7.8236" y="15.1181">B</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2193/">
+            <text x="23.4709" y="45.3543">↓</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2191/">
+            <text x="23.4709" y="15.1181">↑</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3b2/">
+            <text x="39.1181" y="45.3543">β</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/392/">
+            <text x="39.1181" y="15.1181">Β</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/21d3/">
+            <text x="54.7654" y="45.3543">⇓</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/21d1/">
+            <text x="54.7654" y="15.1181">⇑</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AB06" rx="10" width="62.589" x="492.8882" y="284.2205"/>
     <g transform="translate(492.8882, 284.2205)">
-        <text x="7.8236" y="45.3543">n</text>
-        <text x="7.8236" y="15.1181">N</text>
-        <text x="23.4709" y="45.3543">¬</text>
-        <text x="23.4709" y="15.1181">→</text>
-        <text x="39.1181" y="45.3543">ν</text>
-        <text x="39.1181" y="15.1181">Ν</text>
-        <text x="54.7654" y="45.3543">ℕ</text>
+        <a href="https://www.fileformat.info/info/unicode/char/6e/">
+            <text x="7.8236" y="45.3543">n</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/4e/">
+            <text x="7.8236" y="15.1181">N</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/ac/">
+            <text x="23.4709" y="45.3543">¬</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2192/">
+            <text x="23.4709" y="15.1181">→</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3bd/">
+            <text x="39.1181" y="45.3543">ν</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/39d/">
+            <text x="39.1181" y="15.1181">Ν</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2115/">
+            <text x="54.7654" y="45.3543">ℕ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/21d2/">
+            <text x="54.7654" y="15.1181">⇒</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AB07" rx="10" width="62.589" x="563.3008" y="284.2205"/>
+    <a href="https://www.fileformat.info/info/unicode/char/b7/">
+        <text class="annotation_bottom ucp" style="" x="602.4189" y="312.4567">MIDDLE DOT</text>
+    </a>
     <g transform="translate(563.3008, 284.2205)">
-        <text x="7.8236" y="45.3543">,</text>
-        <text x="7.8236" y="15.1181">?</text>
-        <text x="23.4709" y="45.3543">¿</text>
-        <text x="23.4709" y="15.1181">…</text>
-        <text x="39.1181" y="45.3543">⁈</text>
-        <text x="39.1181" y="15.1181">⁉</text>
-        <text x="54.7654" y="45.3543">⁇</text>
+        <a href="https://www.fileformat.info/info/unicode/char/2c/">
+            <text x="7.8236" y="45.3543">,</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/3f/">
+            <text x="7.8236" y="15.1181">?</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/bf/">
+            <text x="23.4709" y="45.3543">¿</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2026/">
+            <text x="23.4709" y="15.1181">…</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2048/">
+            <text x="39.1181" y="45.3543">⁈</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/b7/">
+            <text x="39.1181" y="15.1181">·</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2049/">
+            <text x="54.7654" y="45.3543">⁉</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2047/">
+            <text x="54.7654" y="15.1181">⁇</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AB08" rx="10" width="62.589" x="633.7134" y="284.2205"/>
+    <a href="https://www.fileformat.info/info/unicode/char/2218/">
+        <text class="annotation_bottom ucp" style="" x="667.8315" y="312.4567">RING OPERATOR</text>
+    </a>
+    <a href="https://www.fileformat.info/info/unicode/char/2a2f/">
+        <text class="annotation_bottom ucp" style="" x="712.8315" y="348.6929">VECTOR OR CROSS PRODUCT</text>
+    </a>
     <a href="https://www.fileformat.info/info/unicode/char/22c5/">
-        <text class="annotation ucp" style="" x="653.7134" y="279.2205">DOT OPERATOR</text>
+        <text class="annotation_top ucp" style="" x="657.1843" y="282.2205">DOT OPERATOR</text>
+    </a>
+    <a href="https://www.fileformat.info/info/unicode/char/d7/">
+        <text class="annotation_bottom ucp" style="" x="627.1843" y="348.6929">MULTIPLICATION SIGN</text>
     </a>
     <g transform="translate(633.7134, 284.2205)">
-        <text x="7.8236" y="45.3543">;</text>
-        <text x="7.8236" y="15.1181">.</text>
-        <text x="23.4709" y="45.3543">×</text>
-        <text x="23.4709" y="15.1181">⋅</text>
-        <text x="39.1181" y="45.3543">⨯</text>
-        <text x="39.1181" y="15.1181">∘</text>
-        <text x="54.7654" y="45.3543"/>
-        <text x="54.7654" y="15.1181">·</text>
+        <a href="https://www.fileformat.info/info/unicode/char/3b/">
+            <text x="7.8236" y="45.3543">;</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2e/">
+            <text x="7.8236" y="15.1181">.</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/d7/">
+            <text x="23.4709" y="45.3543">×</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/22c5/">
+            <text x="23.4709" y="15.1181">⋅</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2a2f/">
+            <text x="39.1181" y="45.3543">⨯</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2218/">
+            <text x="39.1181" y="15.1181">∘</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/220f/">
+            <text x="54.7654" y="45.3543">∏</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2299/">
+            <text x="54.7654" y="15.1181">⊙</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AB09" rx="10" width="62.589" x="704.126" y="284.2205"/>
+    <a href="https://www.fileformat.info/info/unicode/char/2236/">
+        <text class="annotation_bottom ucp" style="" x="770.8914" y="348.6929">RATIO</text>
+    </a>
     <a href="https://www.fileformat.info/info/unicode/char/2044/">
-        <text class="annotation ucp" style="" x="759.126" y="279.2205">FRACTION SLASH</text>
+        <text class="annotation_top ucp" style="" x="760.2441" y="282.2205">FRACTION SLASH</text>
     </a>
     <a href="https://www.fileformat.info/info/unicode/char/2215/">
-        <text class="annotation ucp" style="" x="714.126" y="279.2205">DIVISION SLASH</text>
+        <text class="annotation_bottom ucp" style="" x="729.5969" y="312.4567">DIVISION SLASH</text>
+    </a>
+    <a href="https://www.fileformat.info/info/unicode/char/2f/">
+        <text class="annotation_top ucp" style="" x="711.9496" y="282.2205">SOLIDUS</text>
     </a>
     <g transform="translate(704.126, 284.2205)">
-        <text x="7.8236" y="45.3543">:</text>
-        <text x="7.8236" y="15.1181">/</text>
-        <text x="23.4709" y="45.3543">÷</text>
-        <text x="23.4709" y="15.1181">∕</text>
-        <text x="39.1181" y="45.3543">∝</text>
-        <text x="39.1181" y="15.1181">⁄</text>
-        <text x="54.7654" y="45.3543">∶</text>
+        <a href="https://www.fileformat.info/info/unicode/char/3a/">
+            <text x="7.8236" y="45.3543">:</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2f/">
+            <text x="7.8236" y="15.1181">/</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/f7/">
+            <text x="23.4709" y="45.3543">÷</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2215/">
+            <text x="23.4709" y="15.1181">∕</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/221d/">
+            <text x="39.1181" y="45.3543">∝</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2044/">
+            <text x="39.1181" y="15.1181">⁄</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2236/">
+            <text x="54.7654" y="45.3543">∶</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2206/">
+            <text x="54.7654" y="15.1181">∆</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AB10" rx="10" width="80.1921" x="774.5386" y="284.2205"/>
     <a href="https://www.fileformat.info/info/unicode/char/2212/">
-        <text class="annotation ucp" style="" x="804.5386" y="279.2205">MINUS SIGN</text>
+        <text class="annotation_bottom ucp" style="" x="803.6106" y="312.4567">MINUS SIGN</text>
     </a>
     <g transform="translate(774.5386, 284.2205)">
-        <text x="20.048" y="45.3543">!</text>
-        <text x="20.048" y="15.1181">§</text>
-        <text x="60.1441" y="45.3543">¡</text>
-        <text x="60.1441" y="15.1181">−</text>
+        <a href="https://www.fileformat.info/info/unicode/char/21/">
+            <text x="10.024" y="45.3543">!</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/a7/">
+            <text x="10.024" y="15.1181">§</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/a1/">
+            <text x="30.072" y="45.3543">¡</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2212/">
+            <text x="30.072" y="15.1181">−</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/228a/">
+            <text x="50.1201" y="45.3543">⊊</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/228b/">
+            <text x="50.1201" y="15.1181">⊋</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2286/">
+            <text x="70.1681" y="45.3543">⊆</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2287/">
+            <text x="70.1681" y="15.1181">⊇</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="RTSH" rx="10" width="115.3984" x="862.5543" y="284.2205"/>
     <g transform="translate(862.5543, 284.2205)">
@@ -681,13 +1461,19 @@ font-size: 16px;
     </g>
     <rect height="60.4724" kdd:x-key-name="SPCE" rx="10" width="397.0488" x="264.0472" y="355.2756"/>
     <a href="https://www.fileformat.info/info/unicode/char/a0/">
-        <text class="annotation ucp" style="" x="544.0472" y="350.2756">NO-BREAK SPACE</text>
+        <text class="annotation_bottom ucp" style="" x="561.8338" y="383.5118">NO-BREAK SPACE</text>
     </a>
     <g transform="translate(264.0472, 355.2756)">
-        <text x="99.2622" y="45.3543">␣</text>
-        <text x="99.2622" y="15.1181">␣</text>
+        <a href="https://www.fileformat.info/info/unicode/char/20/">
+            <text x="99.2622" y="45.3543">␣</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/20/">
+            <text x="99.2622" y="15.1181">␣</text>
+        </a>
         <text x="297.7866" y="45.3543"/>
-        <text x="297.7866" y="15.1181">⍽</text>
+        <a href="https://www.fileformat.info/info/unicode/char/a0/">
+            <text x="297.7866" y="15.1181">⍽</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="RALT" rx="10" width="80.1921" x="668.9197" y="355.2756"/>
     <g transform="translate(668.9197, 355.2756)">
