@@ -362,11 +362,11 @@ font-size: 16px;
         <a href="https://www.fileformat.info/info/unicode/char/2208/">
             <text x="39.1181" y="45.3543">∈</text>
         </a>
-        <a href="https://www.fileformat.info/info/unicode/char/2209/">
-            <text x="39.1181" y="15.1181">∉</text>
-        </a>
         <a href="https://www.fileformat.info/info/unicode/char/220b/">
-            <text x="54.7654" y="45.3543">∋</text>
+            <text x="39.1181" y="15.1181">∋</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2209/">
+            <text x="54.7654" y="45.3543">∉</text>
         </a>
         <a href="https://www.fileformat.info/info/unicode/char/220c/">
             <text x="54.7654" y="15.1181">∌</text>
@@ -743,7 +743,7 @@ font-size: 16px;
     </g>
     <rect height="60.4724" kdd:x-key-name="AD12" rx="10" width="62.589" x="880.1575" y="142.1102"/>
     <a href="https://www.fileformat.info/info/unicode/char/d8/">
-        <text class="annotation_top ucp" style="" x="903.6284" y="140.1102">LATIN CAPITAL LETTER O WITH STROKE</text>
+        <text class="annotation_top ucp" style="" x="908.6284" y="140.1102">LATIN CAPITAL LETTER O WITH STROKE</text>
     </a>
     <g transform="translate(880.1575, 142.1102)">
         <a href="https://www.fileformat.info/info/unicode/char/24/">
@@ -903,8 +903,8 @@ font-size: 16px;
         <a href="https://www.fileformat.info/info/unicode/char/3b3/">
             <text x="39.1181" y="45.3543">γ</text>
         </a>
-        <a href="https://www.fileformat.info/info/unicode/char/3a3/">
-            <text x="39.1181" y="15.1181">Σ</text>
+        <a href="https://www.fileformat.info/info/unicode/char/393/">
+            <text x="39.1181" y="15.1181">Γ</text>
         </a>
         <a href="https://www.fileformat.info/info/unicode/char/2195/">
             <text x="54.7654" y="45.3543">↕</text>
