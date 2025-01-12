@@ -47,10 +47,6 @@ public class MyKbd {
 
   private CanonicalKeyboardMap canonMap;
   private SvgRepresentedKeyboard representedKeyboard;
-  private Point sizeFirstRect;
-  private double up;
-  private double middle;
-  private double down;
 
   private MyKbd() throws IOException {
     KeyboardMap keyboardMap = MyKbd.keyboardMap();
@@ -65,11 +61,6 @@ public class MyKbd {
         CanonicalKeyboardMapRepresenter representer =
         CanonicalKeyboardMapRepresenter.from(canonMap, XKeyNamesAndRepresenter::defaultRepresentation);
         representedKeyboard = inputSvg.withCanonicalRepresentations(representer);
-    sizeFirstRect =
-        representedKeyboard.svgXKeysToXKeyName().keySet().iterator().next().keyZone().size();
-    up = -5d;
-    middle = sizeFirstRect.y() / 2d + 3d;
-    down = sizeFirstRect.y() + 5d;
   }
 
   private SvgDocumentHelper svgHelper() {
@@ -128,7 +119,7 @@ public class MyKbd {
     pimper.annotate(pimper.find("AD11", 1));
     pimper.annotate(pimper.find("AD11", 3), Position.BOTTOM, 0);
     pimper.annotate(pimper.find("AD11", 2));
-    pimper.annotate(pimper.find("AD12", 3));
+    pimper.annotate(pimper.find("AD12", 3), Position.TOP, 5);
     pimper.annotate(pimper.find("AC02", 3));
     pimper.annotate(pimper.find("AC04", 3));
     pimper.annotate(pimper.find("AC04", 2));
@@ -152,58 +143,6 @@ public class MyKbd {
     pimper.annotate(pimper.find("AB09", 6), Position.BOTTOM, 12);
     pimper.annotate(pimper.find("AB10", 3), Position.BOTTOM, -1);
     pimper.annotate(pimper.find("SPCE", 3), Position.BOTTOM, 0);
-  }
-
-  private void annotate(String x, int symOrderNumber, double xShift) {
-    if (symOrderNumber % 2 == 0) {
-      annotate(x, symOrderNumber, Displacement.given(xShift, up), "");
-    } else {
-      annotate(x, symOrderNumber, Displacement.given(xShift, down), "");
-    }
-  }
-
-  private void annotate(String x, int symOrderNumber, Displacement move, String style) {
-    ImmutableSet<SvgXKey> keys = representedKeyboard.svgXKeys(x);
-    SvgXKey key = Iterables.getOnlyElement(keys);
-    RectangleElement rect = key.rectangle();
-    CanonicalKeysymEntry keysym = canonMap.entries(x).get(symOrderNumber - 1);
-    String sym;
-    String link;
-    ImmutableList<String> classes;
-    if (keysym instanceof ImplicitUcp u) {
-      sym = Character.getName(u.ucp());
-      link = "https://www.fileformat.info/info/unicode/char/" + Integer.toHexString(u.ucp()) + "/";
-      classes = ImmutableList.of("annotation", "ucp");
-    } else {
-      CanonicalMnemonic mnemonic = (CanonicalMnemonic) keysym;
-      Optional<Integer> ucp = mnemonic.ucp();
-      if (ucp.isPresent()) {
-        sym = Character.getName(ucp.get());
-        link =
-            "https://www.fileformat.info/info/unicode/char/" + Integer.toHexString(ucp.get()) + "/";
-        classes = ImmutableList.of("annotation", "ucp");
-      } else {
-        sym = mnemonic.mnemonic();
-        link = "";
-        classes = ImmutableList.of("annotation");
-      }
-    }
-    TextElement t =
-        svgHelper().text().setBaselineStart(rect.zone().start().plus(move)).setContent(sym);
-    t.element().setAttribute("class", String.join(" ", classes));
-    t.element().setAttribute("style", style);
-    verify(t.element().getOwnerDocument().equals(rect.element().getOwnerDocument()));
-    Element toInsert;
-    if (!link.isBlank()) {
-      Element a = t.element().getOwnerDocument().createElement("a");
-      a.setAttribute("href", link);
-      a.appendChild(t.element());
-      toInsert = a;
-    } else {
-      toInsert = t.element();
-    }
-    /* We insert after the rectangle to ensure that it is on top of the rectangle. */
-    rect.element().getParentNode().insertBefore(toInsert, rect.element().getNextSibling());
   }
 
   private static KeyboardMap keyboardMap() throws IOException {
