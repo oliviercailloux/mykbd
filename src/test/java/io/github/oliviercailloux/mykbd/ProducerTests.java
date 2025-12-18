@@ -51,6 +51,7 @@ public class ProducerTests {
     RectangularKeyboard physicalKeyboard =
         layout.toPhysicalKeyboard(Point.given(1.656d, 1.6d), Point.given(0.207d, 0.28d));
     SvgKeyboard svgK = SvgKeyboard.zonedFrom(physicalKeyboard);
+    // Files.writeString(Path.of("Rectangular Elite K70 unlabeled.svg"), DOM_HELPER.toString(svgK.document()));
     String expected = Resources
         .asCharSource(ProducerTests.class.getResource("Rectangular Elite K70 unlabeled.svg"),
             StandardCharsets.UTF_8)
