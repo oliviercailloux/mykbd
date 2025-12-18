@@ -1,9 +1,7 @@
 package io.github.oliviercailloux.mykbd;
 
-import static com.google.common.base.Verify.verify;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.google.common.base.Optional;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.io.CharSource;
@@ -17,9 +15,6 @@ import io.github.oliviercailloux.keyboardd.mapping.KeyboardMap;
 import io.github.oliviercailloux.keyboardd.mapping.XkbKeymapDecomposer;
 import io.github.oliviercailloux.keyboardd.mapping.XkbSymbolsReader;
 import io.github.oliviercailloux.keyboardd.mnemonics.CanonicalKeyboardMap;
-import io.github.oliviercailloux.keyboardd.mnemonics.CanonicalKeysymEntry;
-import io.github.oliviercailloux.keyboardd.mnemonics.CanonicalMnemonic;
-import io.github.oliviercailloux.keyboardd.mnemonics.ImplicitUcp;
 import io.github.oliviercailloux.keyboardd.mnemonics.Mnemonics;
 import io.github.oliviercailloux.keyboardd.representable.CanonicalKeyboardMapRepresenter;
 import io.github.oliviercailloux.keyboardd.representable.RectangularKeyboard;
