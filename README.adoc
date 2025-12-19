@@ -1,16 +1,13 @@
+= My Keyboard
+A example project to generate an SVG keyboard. 
+Illustration with my keyboard (<<elite>>) with https://github.com/oliviercailloux/frsci/[my layout].
 
-== Mine
-    /*
-     * Also, key F1 sends keycode 67, F2 sends keycode 68, Fn+F1 sends keycode 179, sym XF86Tools
-     * (269025153), Fn+F2 sends keycode 122, sym XF86AudioLowerVolume (269025041). evdev maps
-     * keycode 179 to I179 and keycode 122 to VOL-.
-     * 
-     */
-
-https://packages.debian.org/bookworm/all/xkb-data/filelist
-
+.ELITE-K70
+[#elite,link=https://spiritofgamer.com/fr/claviers/402-elite-k70rf-3700104445956.html]
+image::Elite.png[Elite keyboard]
 
 == Instructions
+
 
 - Created Elite K70.json manually
 - Rectangular.java yields Rectangular Elite K70 unlabeled.svg.
