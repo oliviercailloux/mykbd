@@ -1,15 +1,20 @@
 = My Keyboard
 
-A example project to generate an SVG keyboard. 
-Illustration with my keyboard (<<elite>>) with https://github.com/oliviercailloux/frsci/[my layout].
+A example project to generate an https://github.com/oliviercailloux/SVG-keyboard[SVG keyboard]. 
+Illustration with my keyboard and the https://github.com/oliviercailloux/frsci/[frsci] layout.
 
-.ELITE-K70
+.What it really looks like
 [#elite,link=https://spiritofgamer.com/fr/claviers/402-elite-k70rf-3700104445956.html]
 image::Elite.png[Elite keyboard]
 
+== Result
+This is the resulting SVG keyboard.
+
+.The SVG keyboard with layout
+[#elitesvg]
+image::Elite%20K70%20French.svg[SVG keyboard]
+
 == Instructions
-
-
 - Created Elite K70.json manually
 - Rectangular.java yields Rectangular Elite K70 unlabeled.svg.
 - Manual modification yields Elite K70 unlabeled.svg.
