@@ -8,7 +8,7 @@ Illustration with my keyboard and the https://github.com/oliviercailloux/frsci/[
 image::Elite.png[Elite keyboard]
 
 == Result
-This is the resulting SVG keyboard.
+This is the resulting SVG keyboard (for extra geekism, each unicode symbol is clickable).
 
 .The SVG keyboard with layout
 [#elitesvg]
@@ -24,7 +24,7 @@ image::src/test/resources/io/github/oliviercailloux/mykbd/Elite%20K70%20unlabele
 
 . Create a json file that represents your keyboard (or a simplified version of it), row by row, following https://github.com/oliviercailloux/mykbd/blob/main/src/main/resources/io/github/oliviercailloux/mykbd/Elite%20K70.json[this example]. The key names should be X key names (look https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/blob/master/symbols/us#L90[here] for the names used in a standard US mapping; https://github.com/oliviercailloux/XKB-doc/blob/main/README.adoc[here] are the gory details). Consider the basic key width as the reference width and indicate widths relative to it for keys that have non normal widths. In my case, for example, the backspace key takes up two normal keys width plus the inter key width so I set it at 2.125 (17/8).
 . In Java: from this file, obtain a Guava https://github.com/google/guava/wiki/IOExplained#sources-and-sinks[CharSource], use `JsonRectangularKeyboardReader` to obtain a `JsonRectangularRowKeyboard`, scale it (by indicating the real width and height of a key and of the inter-key space) to obtain a `RectangularKeyboard`, transform this to a more general `SvgKeyboard` and use a `DomHelper` to serialize the result to a file. See https://github.com/oliviercailloux/mykbd/blob/main/src/test/java/io/github/oliviercailloux/mykbd/ProducerTests.java#L44-L49[this example]. Obtain something like https://github.com/oliviercailloux/mykbd/blob/main/src/test/resources/io/github/oliviercailloux/mykbd/Rectangular%20Elite%20K70%20unlabeled.svg[this].
-. Modify the resulting SVG manually (using any SVG editor) to improve the key shapes, if desired. In my case only the ENTER key needed this. Make sure you keep the `x-key-name` attributes in the SVG file.
+. Modify the resulting SVG manually (using any SVG editor) to improve the key shapes or markings, if desired. In my case only the ENTER key needed a more complex shape and I added a static Fn mark on one key (as it does not send any signal to the OS, it is not dynamically marked). Make sure you keep the `x-key-name` attributes in the SVG file.
 
 === X key names styled
 It is now easy to label the keys, to obtain this.
