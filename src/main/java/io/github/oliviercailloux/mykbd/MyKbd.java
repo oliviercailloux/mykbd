@@ -29,6 +29,7 @@ import io.github.oliviercailloux.svgb.StyleElement;
 import io.github.oliviercailloux.svgb.SvgDocumentHelper;
 import io.github.oliviercailloux.svgb.TextElement;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Optional;
@@ -147,8 +148,8 @@ public class MyKbd {
 
   private static KeyboardMap keyboardMap() throws IOException {
     return XkbSymbolsReader.read(MoreFiles.asCharSource(
-        Path.of("/etc/xkb/symbols/frsci/",
-        Charsets.UTF_8));
+        Path.of("/etc/xkb/symbols/frsci/"),
+        StandardCharsets.UTF_8));
   }
 
   public SvgRepresentedKeyboard representedKeyboard() {
