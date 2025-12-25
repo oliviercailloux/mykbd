@@ -121,9 +121,9 @@ public class Pimper {
     double x = entry.zone().center().x() + xShift;
     double y;
     if (position == Position.TOP) {
-      y = entry.zone().start().y() - (center ? -3 : 2);
+      y = entry.zone().topLeft().y() - (center ? -3 : 2);
     } else {
-      y = entry.zone().end().y() + (center ? -2 : 4);
+      y = entry.zone().bottomRight().y() + (center ? -2 : 4);
     }
     textPos = Point.given(x, y);
 

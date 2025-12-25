@@ -6,7 +6,7 @@ import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.io.CharSource;
 import com.google.common.io.Resources;
-import io.github.oliviercailloux.geometry.Point;
+import io.github.oliviercailloux.geometry.Size;
 import io.github.oliviercailloux.jaris.io.PathUtils;
 import io.github.oliviercailloux.jaris.xml.DomHelper;
 import io.github.oliviercailloux.keyboardd.keyboard.json.JsonRectangularKeyboardReader;
@@ -44,9 +44,10 @@ public class ProducerTests {
     JsonRectangularRowKeyboard layout = JsonRectangularKeyboardReader.rowKeyboard(jsonInput);
 
     RectangularKeyboard physicalKeyboard =
-        layout.toPhysicalKeyboard(Point.given(1.656d, 1.6d), Point.given(0.207d, 0.28d));
+        layout.toPhysicalKeyboard(Size.given(1.656d, 1.6d), Size.given(0.207d, 0.28d));
     SvgKeyboard svgK = SvgKeyboard.zonedFrom(physicalKeyboard);
-    // Files.writeString(Path.of("Rectangular Elite K70 unlabeled.svg"), DOM_HELPER.toString(svgK.document()));
+    // Files.writeString(Path.of("Rectangular Elite K70 unlabeled.svg"),
+    // DOM_HELPER.toString(svgK.document()));
     String expected = Resources
         .asCharSource(ProducerTests.class.getResource("Rectangular Elite K70 unlabeled.svg"),
             StandardCharsets.UTF_8)
@@ -59,8 +60,8 @@ public class ProducerTests {
   void testUnlabeledToX() throws Exception {
     SvgKeyboard svgK = SvgKeyboard.using(DOM_HELPER.asDocument(
         Resources.asByteSource(ProducerTests.class.getResource("Elite K70 unlabeled.svg"))));
-    String expected = PathUtils
-        .read(PathUtils.fromResource(ProducerTests.class, "Elite K70 with X key names.svg"));
+    String expected = Files.readString(
+        Path.of(ProducerTests.class.getResource("Elite K70 with X key names.svg").toURI()));
     Document out = svgK.withRepresentations(x -> ImmutableList.of(Representation.fromString(x)));
     String result = DOM_HELPER.toString(out);
     assertEquals(expected, result);
@@ -72,26 +73,23 @@ public class ProducerTests {
         Resources.asByteSource(ProducerTests.class.getResource("Elite K70 unlabeled.svg"))));
     inputSvg.setFontSize(16d);
 
-    KeyboardMap map =
-        XkbSymbolsReader.common().overwrite(keyboardMap("fr", "oss"));
+    KeyboardMap map = XkbSymbolsReader.common().overwrite(keyboardMap("fr", "oss"));
     CanonicalKeyboardMap canonMap = CanonicalKeyboardMap
         .canonicalize(map.canonicalize(Xkeys.latest().canonicalByAlias()), Mnemonics.latest());
-    XKeyNamesAndRepresenter representer =
-        CanonicalKeyboardMapRepresenter.from(canonMap, XKeyNamesAndRepresenter::defaultRepresentation);
+    XKeyNamesAndRepresenter representer = CanonicalKeyboardMapRepresenter.from(canonMap,
+        XKeyNamesAndRepresenter::defaultRepresentation);
     Document out = inputSvg.withRepresentations(representer::representations);
 
     String result = DOM_HELPER.toString(out);
     // Files.writeString(Path.of("Elite K70 French.svg"), result);
     String expected =
-        PathUtils.read(PathUtils.fromResource(ProducerTests.class, "Elite K70 French.svg"));
+        Files.readString(Path.of(ProducerTests.class.getResource("Elite K70 French.svg").toURI()));
     assertEquals(expected, result);
   }
 
   KeyboardMap keyboardMap(String file, String part) throws IOException {
-    ImmutableMap<String, String> bySymbolsMap = XkbKeymapDecomposer
-        .bySymbolsMap(Resources
-        .asCharSource(ProducerTests.class.getResource(file),
-            StandardCharsets.UTF_8));
+    ImmutableMap<String, String> bySymbolsMap = XkbKeymapDecomposer.bySymbolsMap(
+        Resources.asCharSource(ProducerTests.class.getResource(file), StandardCharsets.UTF_8));
     String symbolsMap = bySymbolsMap.get(part);
     KeyboardMap mapped = XkbSymbolsReader.read(CharSource.wrap(symbolsMap));
     return mapped;
