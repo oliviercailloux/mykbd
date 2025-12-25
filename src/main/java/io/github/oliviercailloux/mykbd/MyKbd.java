@@ -147,7 +147,7 @@ public class MyKbd {
 
   private static KeyboardMap keyboardMap() throws IOException {
     return XkbSymbolsReader.read(MoreFiles.asCharSource(
-        Path.of(System.getProperty("user.home")).resolve(".config/xkb/symbols/mir"),
+        Path.of("/etc/xkb/symbols/frsci/",
         Charsets.UTF_8));
   }
 
