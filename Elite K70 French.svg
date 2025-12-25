@@ -284,8 +284,11 @@ font-size: 16px;
         <a href="https://www.fileformat.info/info/unicode/char/216e/">
             <text x="39.1181" y="15.1181">Ⅾ</text>
         </a>
-        <a href="https://www.fileformat.info/info/unicode/char/21be/">
-            <text x="54.7654" y="45.3543">↾</text>
+        <a href="https://www.fileformat.info/info/unicode/char/2223/">
+            <text x="54.7654" y="45.3543">∣</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2224/">
+            <text x="54.7654" y="15.1181">∤</text>
         </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AE07" rx="10" width="62.589" x="492.8882" y="71.0551"/>
@@ -499,6 +502,9 @@ font-size: 16px;
         <a href="https://www.fileformat.info/info/unicode/char/2200/">
             <text x="54.7654" y="45.3543">∀</text>
         </a>
+        <a href="https://www.fileformat.info/info/unicode/char/226a/">
+            <text x="54.7654" y="15.1181">≪</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AD02" rx="10" width="62.589" x="176.0315" y="142.1102"/>
     <g transform="translate(176.0315, 142.1102)">
@@ -520,8 +526,8 @@ font-size: 16px;
         <a href="https://www.fileformat.info/info/unicode/char/396/">
             <text x="39.1181" y="15.1181">Ζ</text>
         </a>
-        <a href="https://www.fileformat.info/info/unicode/char/226a/">
-            <text x="54.7654" y="45.3543">≪</text>
+        <a href="https://www.fileformat.info/info/unicode/char/2124/">
+            <text x="54.7654" y="45.3543">ℤ</text>
         </a>
         <a href="https://www.fileformat.info/info/unicode/char/226b/">
             <text x="54.7654" y="15.1181">≫</text>
@@ -580,29 +586,35 @@ font-size: 16px;
         <a href="https://www.fileformat.info/info/unicode/char/211d/">
             <text x="54.7654" y="45.3543">ℝ</text>
         </a>
+        <a href="https://www.fileformat.info/info/unicode/char/1d53c/">
+            <text x="54.7654" y="15.1181">&#120124;</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AD05" rx="10" width="62.589" x="387.2693" y="142.1102"/>
     <a href="https://www.fileformat.info/info/unicode/char/fe/">
-        <text class="annotation_top ucp" style="" x="418.5638" y="175.3464">LATIN SMALL LETTER THORN</text>
+        <text class="annotation_top ucp" style="" x="410.7402" y="175.3464">LATIN SMALL LETTER THORN</text>
     </a>
     <g transform="translate(387.2693, 142.1102)">
         <a href="https://www.fileformat.info/info/unicode/char/74/">
-            <text x="10.4315" y="45.3543">t</text>
+            <text x="7.8236" y="45.3543">t</text>
         </a>
         <a href="https://www.fileformat.info/info/unicode/char/54/">
-            <text x="10.4315" y="15.1181">T</text>
+            <text x="7.8236" y="15.1181">T</text>
         </a>
         <a href="https://www.fileformat.info/info/unicode/char/fe/">
-            <text x="31.2945" y="45.3543">þ</text>
+            <text x="23.4709" y="45.3543">þ</text>
         </a>
         <a href="https://www.fileformat.info/info/unicode/char/de/">
-            <text x="31.2945" y="15.1181">Þ</text>
+            <text x="23.4709" y="15.1181">Þ</text>
         </a>
         <a href="https://www.fileformat.info/info/unicode/char/3c4/">
-            <text x="52.1575" y="45.3543">τ</text>
+            <text x="39.1181" y="45.3543">τ</text>
         </a>
         <a href="https://www.fileformat.info/info/unicode/char/3a4/">
-            <text x="52.1575" y="15.1181">Τ</text>
+            <text x="39.1181" y="15.1181">Τ</text>
+        </a>
+        <a href="https://www.fileformat.info/info/unicode/char/21be/">
+            <text x="54.7654" y="45.3543">↾</text>
         </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AD06" rx="10" width="62.589" x="457.6819" y="142.1102"/>
@@ -691,6 +703,9 @@ font-size: 16px;
         <a href="https://www.fileformat.info/info/unicode/char/2205/">
             <text x="54.7654" y="45.3543">∅</text>
         </a>
+        <a href="https://www.fileformat.info/info/unicode/char/2070/">
+            <text x="54.7654" y="15.1181">⁰</text>
+        </a>
     </g>
     <rect height="60.4724" kdd:x-key-name="AD10" rx="10" width="62.589" x="739.3323" y="142.1102"/>
     <g transform="translate(739.3323, 142.1102)">
@@ -764,7 +779,9 @@ font-size: 16px;
         <a href="https://www.fileformat.info/info/unicode/char/22ad/">
             <text x="39.1181" y="15.1181">⊭</text>
         </a>
-        <text x="54.7654" y="45.3543"/>
+        <a href="https://www.fileformat.info/info/unicode/char/302/">
+            <text x="54.7654" y="45.3543">̂</text>
+        </a>
         <a href="https://www.fileformat.info/info/unicode/char/2295/">
             <text x="54.7654" y="15.1181">⊕</text>
         </a>
@@ -1470,7 +1487,9 @@ font-size: 16px;
         <a href="https://www.fileformat.info/info/unicode/char/20/">
             <text x="99.2622" y="15.1181">␣</text>
         </a>
-        <text x="297.7866" y="45.3543"/>
+        <a href="https://www.fileformat.info/info/unicode/char/a0/">
+            <text x="297.7866" y="45.3543">⍽</text>
+        </a>
         <a href="https://www.fileformat.info/info/unicode/char/a0/">
             <text x="297.7866" y="15.1181">⍽</text>
         </a>
