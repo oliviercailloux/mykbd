@@ -39,7 +39,6 @@ import org.w3c.dom.Element;
 public class MyKbd {
   @SuppressWarnings("unused")
   private static final Logger LOGGER = LoggerFactory.getLogger(MyKbd.class);
-  
 
   public static MyKbd create() throws IOException {
     return new MyKbd();
@@ -58,9 +57,9 @@ public class MyKbd {
     KeyboardMap map = XkbSymbolsReader.common().overwrite(keyboardMap);
     canonMap = CanonicalKeyboardMap
         .canonicalize(map.canonicalize(Xkeys.latest().canonicalByAlias()), Mnemonics.latest());
-        CanonicalKeyboardMapRepresenter representer =
-        CanonicalKeyboardMapRepresenter.from(canonMap, XKeyNamesAndRepresenter::defaultRepresentation);
-        representedKeyboard = inputSvg.withCanonicalRepresentations(representer);
+    CanonicalKeyboardMapRepresenter representer = CanonicalKeyboardMapRepresenter.from(canonMap,
+        XKeyNamesAndRepresenter::defaultRepresentation);
+    representedKeyboard = inputSvg.withCanonicalRepresentations(representer);
   }
 
   private SvgDocumentHelper svgHelper() {
@@ -96,7 +95,8 @@ public class MyKbd {
         }
         """);
 
-        representedKeyboard.document().getDocumentElement().insertBefore(style.element(), root().getFirstChild());
+    representedKeyboard.document().getDocumentElement().insertBefore(style.element(),
+        root().getFirstChild());
 
     Pimper pimper = Pimper.create(representedKeyboard);
     pimper.linkAll();
