@@ -15,7 +15,7 @@
     <dependency>
       <groupId>io.github.oliviercailloux</groupId>
       <artifactId>keyboardd</artifactId>
-      <version>0.0.2</version>
+      <version>0.0.3-SNAPSHOT</version>
     </dependency>
 
     <dependency>
